@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12_가상클래스.html</title>
+    <link rel="stylesheet" href="./sheets/css12.css">
 
     <script src="https://kit.fontawesome.com/0b163d8ef1.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+
     <h3># Pseudo class</h3>
 
     <ul>
         <li>선택자 뒤에 :을 붙여 해당 요소의 특정 상황만을 선택하는 것</li>
         <li>:first-child는 첫 번째 자식요소를 선택하는 것이 아니라 해당 요소가 첫 번째 자식이 된 상황을 선택하는 것</li>
     </ul>
+
+    <hr>
+
+    <h3># a 태그에 특화된 pseudo class들</h3>
+
+    <ul>
+        <li>:hover - 링크에 마우스를 올렸을 때</li>
+        <li>:link - 해당 링크에 방문한 적 없을 때</li>
+        <li>:active - 해당 링크를 클릭하고 있을 때(클릭반응)</li>
+        <li>:visited - 해당 링크에 방문한 적 있을 때</li>
+    </ul>
+
+    <div>
+        <a id="mylink1" class="fa-solid fa-frog fa-bounce" href="https:naver.com"></a>
+    </div>
+    <div>
+        <a id="mylink1" class="fa-solid fa-frog fa-bounce" href="https:naver.coms"></a>
+    </div>
+    <div>
+        <a id="mylink1" class="fa-solid fa-frog fa-bounce" href="https:naver.com5"></a>
+    </div>
 
     <hr>
 
@@ -29,5 +53,18 @@
         <i class="fa-solid fa-frog fa-bounce"></i>
         <i class="fa-solid fa-frog fa-bounce"></i>
     </div>
+
+    <button onclick="insertFrog()">깨골</button>
+
+    <script>
+        // Javascript 영역 (웹 브라우저에서 동작시킬 수 있는 프로그래밍 언어)
+        const container = document.getElementById('container');
+
+        function insertFrog() {
+            container.innerHTML += '<i class="fa-solid fa-frog fa-bounce"></i>';
+
+        }
+    </script>
 </body>
+
 </html>

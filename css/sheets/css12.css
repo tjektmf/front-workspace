@@ -1,0 +1,37 @@
+*{
+    user-select: none;
+}
+#container{
+    user-select: none;
+    box-sizing: border-box;
+    border: solid 3px red;
+    width: 500px;
+    padding: 5px;
+    word-spacing: -5px;
+}
+
+#container >i{
+    font-size: 30px;
+}
+
+#container >i:nth-child(3n){
+    font-size: 50px;
+}
+
+#mylink1{
+    border: solid 3px red;
+    font-size: 30px;
+    text-decoration: none;
+    color: green;
+    padding: 5px;
+}
+#mylink1:link{
+    color:gold;
+}
+#mylink1:visited{
+    color: blue;
+}
+/* active는 맨 밑에 놓아야 visited 상태에서 적용됨 */
+#mylink1:active{
+    color: red;
+}
