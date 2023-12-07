@@ -1,0 +1,28 @@
+#testDiv {
+    border: solid 3px yellow;
+    padding: 3px;
+    text-align: justify;
+
+}
+
+#testDiv::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#testDiv::first-line {
+    text-decoration: underline 1px solid blue;
+}
+
+#testDiv::selection {
+    background-color: aqua;
+    color: aqua;
+}
+
+#testDiv::before {
+    content: 'ㅎ2';
+}
+
+#testDiv::after {
+    content: 'ㅂ2' 'ㅂ2😁😍😘😇' url(../../assets/image/cat.gif);
+}
