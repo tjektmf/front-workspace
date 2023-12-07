@@ -1,0 +1,37 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Nova+Square&family=Rubik+Bubbles&family=Shizuru&family=Whisper&display=swap');
+
+
+
+
+#google-font-ex1{
+    /* 폰트를 적용할 때 ,를 사용해 여러개를 적용해두면 앞의 글꼴이 사용될 수 없을 때 뒤의 글꼴을 사용함 */
+    font-family: 'Rubik Bubbles', cursive;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px blue,0px 0px 7px yellow,0px 0px 5px red;
+    color: white;
+
+}
+
+#font-ex-1{
+    font-family: 'Whisper', cursive;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 0px 10px blueviolet,0px 0px 10px blueviolet,0px 0px 10px blueviolet;
+
+
+}
+
+#font-ex-2{
+    font-family: 'Nova Square', cursive;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px gray, 0px 0px 10px gold,0px 0px 10px gold, 0px 0px 10px gold;
+}
+
+#font-ex-3{
+    font-family: 'Shizuru';
+    font-size: 50px;
+    text-shadow: -1px -1px 10px green,-1px 1px 10px green,1px -1px 10px green,1px 1px 10px green;
+
+}

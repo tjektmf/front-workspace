@@ -1,0 +1,57 @@
+div[id^="abs-"] {
+    border: solid 3px blue;
+    margin: 5px;
+    box-sizing: border-box;
+
+}
+
+#abs-ex1 {
+    width: 100px;
+    height: 100px;
+}
+
+#abs-ex2 {
+    width: 100mm;
+    height: 100mm;
+}
+
+#abs-ex3 {
+    width: 10cm;
+    height: 10cm;
+}
+
+#abs-ex4 {
+    width: 7in;
+    height: 7in;
+}
+
+[id^="rel-"] {
+    box-sizing: border-box;
+    border: solid 3px green;
+}
+
+#rel-ex1 {
+    width: 50%;
+}
+
+/* em : 현재 요소의 크기에 따른 크기 조절 */
+#rel-ex2 {
+    width: 10em;
+    font-size: 25px;
+}
+
+/* rem : html태그에 설정된 font-size에만 영향을 받음 */
+#rel-ex3 {
+    width: 10rem;
+    font-size: 15px;
+}
+
+#rel-ex4{
+    width: 25vw;
+
+}
+
+#rel-ex5{
+    width: 25vh;
+
+}

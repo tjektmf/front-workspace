@@ -1,0 +1,19 @@
+/* css03.css */
+.detail {
+    font-size: 0.8em;
+    color: chocolate;
+}
+
+ul#quiz1>li:nth-of-type(even) {
+    color: red;
+    border: 1px solid red;
+}
+
+ul#quiz2>li:nth-of-type(5n+1) {
+    color: red;
+}
+
+#quiz2>li:first-child,
+#quiz2>li:last-child {
+    color: red;
+}

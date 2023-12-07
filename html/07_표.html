@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" ; style="background-color: gray;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title># 웹 페이지 표 출력하기.html</title>
+</head>
+
+<body>
+    <p>
+        - &lt;table&gt; : 표를 의미하는 태그 <br>
+        - &lt;tr&gt; : table row, 표의 한 행을 의미하는 태그 <br>
+        - &lt;th&gt; : table header, 한 행에 제목 칸을 추가하는 태그 <br>
+        - &lt;td&gt; : table data, 한 행에 일반 칸을 추가하는 태그 <br>
+        - colspan attr : 해당 칸이 몇 열을 차지하는지 설정하는 속성 <br>
+        - rowspan attr : 해당 칸이 몇 행을 차지하는지 설정하는 속성 <br>
+    </p>
+    <table border="1">
+        <tr>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+            <th>총점</th>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>20</td>
+            <td>30</td>
+            <td>60</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="3">
+        <tr>
+            <th>구거</th>
+            <td>10</td>
+        </tr>
+        <tr>
+            <th>영어</th>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th>솩</th>
+            <td>80</td>
+        </tr>
+        <tr>
+            <th>총점</th>
+            <td>110</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="2">
+        <tr>
+            <th>이름</th>
+            <td>번호</td>
+        </tr>
+        <tr>
+            <td>김김김</td>
+            <td>02-123-456</td>
+            <td>010-1234-5678</td>
+        </tr>
+        <tr>
+            <td>김멍멍</td>
+            <td></td>
+            <td>010-1523-4561</td>
+        </tr>
+        <tr>
+            <td>흐느적</td>
+            <td colspan="2">번호없음</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>과목</th>
+            <th>점수</th>
+        </tr>
+        <tr>
+            <td>김철수</td>
+            <td>국어</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>영어</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>솩</td>
+            <td>50</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>과목</th>
+            <th>점수</th>
+        </tr>
+        <tr>
+            <td rowspan="3">김철수</td>
+            <td>국어</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>영어</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>솩</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+    <hr>
+    <!-- 연습 문제 -->
+    <table border="1" style="border-collapse: collapse;">
+        <th colspan="6"><b>
+                <center>Time Table </center>
+            </b></th>
+        <tr>
+        <tr>
+            <td rowspan="6"><b>
+                    <center>Hours</center>
+                </b></td>
+            <td><b>
+                    <center>Mon</center>
+                </b></td>
+            <td><b>
+                    <center>Tue</center>
+                </b></td>
+            <td><b>
+                    <center>Wed</center>
+                </b></td>
+            <td><b>
+                    <center>Thu</center>
+                </b></td>
+            <td><b>
+                    <center>Fri</center>
+                </b></td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <td colspan="5"><b>
+                    <center>Lunch</center>
+                </b></td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td></td>
+        </tr>
+
+
+        </tr>
+    </table>
+</body>
+
+</html>

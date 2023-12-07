@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_링크.html</title>
+</head>
+
+<body>
+    <h3># 링크타고 다른 페이지로 이동</h3>
+
+    <p>
+        1. a태그를 이용 <br>
+        2. JavaScript 이용하기 <br>
+
+    </p>
+
+    <h3># a(anchor) tag</h3>
+
+    <p>
+        <!-- ./ 하면 같은 폴더 안의 html 파일들을 보여줌 -->
+        <!-- http를 빼면 상대경로로 잡아줌 -->
+        - a 태그는 전체 글의 일부에 <a href="./">링크</a>를 걸 수 있는 태그임 <br>
+        - 자신의 영역을 생성하는 태그가 아니다 <br>
+        - href 속성에 가고 싶은 곳의 주소(url)를 설정해 놓는다 <br>
+        - 절대 경로와 상대 경로를 모두 사용할 수 있다 <br>
+    </p>
+
+    <a href="https://github.com/tjektmf/myonly"> 우리 깃허브로 이동</a> <br><br>
+    <a href="https://naver.com"> 네이버로 이동 </a> <br><br>
+
+    <a href="//naver.com">http:가 없는 네이버로 이동</a> <br><br>
+    <!-- http:가 없으면 file://naver.com/-->
+
+    <a href="naver.com">http://가 없는 네이버로 이동</a> <br><br>
+    <!-- http://가 없으면 file:///C:/ds/front-workspace/html/naver.com -->
+
+    <h3># URL 경로의 종류</h3>
+<p>
+    <a href="naver.com">naver.com</a> : 상대경로 (현재위치)<br><br>
+    <a href="./naver.com">./naver.com</a> : 위와 같음 (./는 생략가능) <br><br>
+    <a href="/naver.com">/naver.com</a> : 도메인부터 시작되는 상대경로 <br><br>
+    <a href="//naver.com">//naver.com</a> : 프로토콜부터 시작되는 상대경로  <br><br>
+    <a href="http://naver.com">http://naver.com</a> : url의 절대경로 <br><br>
+</p>
+
+<h3>#내가 만든 다른 페이지로 링크 걸기</h3>
+
+<p>
+    - <a href="./01_HTML이란.html">HTML이란?</a> <br><br>
+    - <a href="./02_제목과 문단.html">제목과 문단</a> <br><br>
+    - <a href="./03_요소.html">요소</a> <br><br>
+    - <a href="./04_속성.html">속성</a> <br><br>
+    - <a href="./05_링크.html">링크</a> <br><br>
+</p>
+
+<h3>#해당 웹 페이지의 특정 부분으로 링크 걸기</h3>
+
+<p>
+    - 해당 요소의 id 속성값으로 링크를 거는 것이 가능하다 <br>
+    - 해당 위치의 링크로 이동하는 것이기 때문에 뒤로가기하면 다시 위로올라감 <br>
+    - <a href="#chap01">chapter 1로 이동하기</a> <br>
+    - <a href="#chap02">chapter 2로 이동하기</a> <br>
+    - <a href="#chap03">chapter 3로 이동하기</a> <br>
+    - <a href="#chap04">chapter 4로 이동하기</a> <br>
+</p>
+
+<h3># JavaScript를 통해 링크 걸기</h3>
+
+<p>
+    - 자바스크립트를 사용하면 아무 요소에나 링크를 걸 수 있다 <br>
+    - <b onclick="location.href = 'http://naver.com';">굵은 글씨</b>를 누르면 이동 <br>
+</p>
+<hr>
+<!-- 여기서 준 id 값을 a태그의 href에 넣음 <a href="#chap01"> 이런 느낌 -->
+<h1 id="chap01"># chapter 1</h1>
+
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+
+<h1 id="chap02"># chapter 2</h1>
+
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+
+<h1 id="chap03"># chapter 3</h1>
+
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+<h1 id="chap04"># chapter 4</h1>
+
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+aa aa aa aa a a a a a asdjflaksd lkdsj lads l <br>
+</body>
+
+</html>

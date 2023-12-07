@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_CSS란.html</title>
+    <style>
+        /* CSS 영역*/
+        /* CSS의 주석(한 줄 주석은 없음 아마도) */
+        h3{
+            color: orange;
+            background-color: aqua;
+        }
+        ul{
+            border: dashed 3px plum;
+            border-radius: 10px;
+            padding: 5px;
+            padding-left: 50px;
+        }
+
+        li{
+            border: solid 3px purple;
+            border-radius: 10px;
+            padding: 3px;
+            margin-right: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        ol{
+            border:solid 2px yellow;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        body{
+            background-color: gray;
+        }
+        hr{
+            color: black;
+        }
+
+</style>
+</head>
+<body>
+    <h3># CSS (Cascading Style Sheet)</h3>
+
+    <!-- ul은 순서가 없는 리스트 -->
+    <ul>
+        <li>CSS는 해당 웹 페이지의 스타일(디자인)을 담당한다</li>
+        <li>웹 브라우저는 정의된 CSS를 보고 해당 요소를 어떻게 화면에 그려야 할지를 결정한다</li>
+        <li>CSS 스타일시트를 통해 요소의 디자인을 원하는대로 수정할 수 있으므로 HTML 태그의 기본 디자인은 거의 쓸모가 없다</li>
+        <li>결국 HTML은 해당 태그가 가지고 있는 의미가 가장 중요함 (뼈대 역할)</li>
+
+    </ul>
+    
+    <hr>
+
+    <ol type="I">
+        <li>List Item 1</li>
+        <ol type="a">
+            <li>Nested Item 1.1</li>
+            <li>Nested Item 1.2</li>
+        </ol>
+        <li>List Item 2</li>
+        <ol type="1">
+            <li>Nested Item 2.1</li>
+            <li>Nested Item 2.2</li>
+            <ul type="circle">
+                <li>Nested Item 2.2.1</li>
+                <li>Nested Item 2.2.2</li>
+                <ul type="square">
+                    <li>Nested Item 2.2.2.1</li>
+                    <li>Nested Item 2.2.2.2</li>
+                </ul>
+                <li>Nested Item 2.2.3</li>
+            </ul>
+            <li>Nested Item 2.3</li>
+        </ol>
+        <li>List Item 3</li>
+        <ul type="disc">
+            <li>Nested Item 3.1</li>
+            <li>Nested Item 3.1</li>
+            <li>Nested Item 3.1</li>
+        </ul>
+    </ol>
+
+    <hr>
+
+</body>
+</html>

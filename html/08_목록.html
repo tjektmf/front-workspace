@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: gray;">
+<!-- en으로 설정해놓으면 크롬에서 친절하게 번역할거냐고 물어봄 ko로 설정하면 안물어봄 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08_목록.html</title>
+</head>
+
+<body>
+    <h3># ul : unordered list, 순서가 없는 리스트</h3> <br>
+    <p>
+        - type attr : disc(default), circle, square, none
+    </p>
+
+    <!-- unordered list -->
+    <ul style="border: solid 1px yellow;" type="square">
+        <!-- li : list item -->
+        <li style="border: solid 1px skyblue;">붕어빵</li>
+        <li>잉어빵</li>
+        <li>계란빵</li>
+    </ul>
+    <h3># ol : ordered list, 순서가 있는 리스트</h3> <br>
+    <p>
+        - type attr : 1(default), a, A, i, I <br>
+        - start attr : 시작하는 숫자를 설정할 수 있다 <br>
+    </p>
+
+    <ol type="i" start="5">
+        <li>군밤</li>
+        <li>군고구마</li>
+        <li>군옥수수</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <h3># dl : description list, 설명이 있는 리스트</h3> <br>
+
+    <!-- dt를 dd로 설명해줌-->
+    <dl>
+        <dt>- 잉어빵</dt>
+        <dd><i>잉어로 만든 빵</i></dd>
+        <dt>- Java</dt>
+        <dd><b>근본넘치는 언어</b></dd>
+        <dt>- Python</dt>
+        <dd><i>근본없는 언어</i></dd>
+    </dl>
+
+
+    <hr>
+
+    Preceding Text <br><br>
+    <ol type="I">
+        <li>List Item 1</li>
+        <ol type="a">
+            <li>Nested Item 1.1</li>
+            <li>Nested Item 1.2</li>
+        </ol>
+        <li>List Item 2</li>
+        <ol type="1">
+            <li>Nested Item 2.1</li>
+            <li>Nested Item 2.2</li>
+            <ul type="circle">
+                <li>Nested Item 2.2.1</li>
+                <li>Nested Item 2.2.2</li>
+                <ul type="square">
+                    <li>Nested Item 2.2.2.1</li>
+                    <li>Nested Item 2.2.2.2</li>
+                </ul>
+                <li>Nested Item 2.2.3</li>
+            </ul>
+            <li>Nested Item 2.3</li>
+        </ol>
+        <li>List Item 3</li>
+        <ul type="disc">
+            <li>Nested Item 3.1</li>
+            <li>Nested Item 3.1</li>
+            <li>Nested Item 3.1</li>
+        </ul>
+    </ol>
+</body>
+
+</html>

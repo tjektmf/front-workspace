@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_여백.html</title>
+    <link rel="stylesheet" href="./sheets/css06.css">
+</head>
+
+<body>
+
+    <h3># margin</h3>
+    <ul>
+        <li>해당 요소와 다른 요소의 거리를 결정하는 여백</li>
+        <li>border 바깥의 여백</li>
+        <li>margin-bottom과 margin-top이 만나는 곳에서는 둘 중 더 높은 margin으로 적용된다</li>
+        <li>margin을 auto로 설정하면 해당 요소를 가운데로 정렬해준다</li>
+    </ul>
+
+    <h3># padding</h3>
+    <ul>
+        <li>해당 요소의 border 안쪽부터 컨텐츠까지의 여백</li>
+        <li>기본적으로는 padding의 크기가 요소 전체 크기에 가산된다<br>
+            요소의 크기는 width + padding + (border-width) x2
+
+        </li>
+    </ul>
+    <h3># HTML Box Model</h3>
+
+    <ul>
+        <li>HTML의 모든 요소는 박스 형태로 구성되어 있다</li>
+        <li>요소를 구성하는 박스의 제일 바깥쪽 여백이 margin이고 border, padding, content-box 순으로 요소를 구성하고 있다</li>
+        <li>해당 요소의 여백을 F12 개발자 도구를 통해 그림으로 확인할 수 있다</li>
+        <li>전체 요소의 크기를 설정하기 매우 어렵다</li>
+    </ul>
+
+    <hr>
+    <h3># box-sizing property</h3>
+
+    <dl>
+        <dt>box-sizing : content-box (default)</dt>
+        <dd>width/height property가 content-box의 크기를 의미하게 된다</dd>
+        <dt>box-sizing : border-box</dt>
+        <dd>width/height property가 해당 요소의 전체 크기를 의미하게 된다</dd>
+        
+    </dl>
+
+    <hr>
+
+    <div id="testDiv1">
+        Updates to your homepage feed
+        We've combined the power of the Following feed with the For you feed so there’s one place to discover content on
+        GitHub. <br>
+        There’s improved filtering so you can customize your feed exactly how you like it, and a shiny new visual
+        design. ✨
+    </div>
+
+    <div id="testDiv2">
+        Updates to your homepage feed
+        We've combined the power of the Following feed with the For you feed so there’s one place to discover content on
+        GitHub. <br>
+        There’s improved filtering so you can customize your feed exactly how you like it, and a shiny new visual
+        design. ✨
+    </div>
+
+    <div id="testDiv3">
+        Updates to your homepage feed
+        We've combined the power of the Following feed with the For you feed so there’s one place to discover content on
+        GitHub. <br>
+        There’s improved filtering so you can customize your feed exactly how you like it, and a shiny new visual
+        design. ✨
+    </div>
+
+
+    <div id="content-box">
+        width/height를 200px로 설정한
+        box-sizing : content-box의 경우
+
+    </div>
+
+    <div id="border-box">
+        width/height를 200px로 설정한
+        box-sizing : border-box의 경우
+    </div>
+</body>
+
+</html>

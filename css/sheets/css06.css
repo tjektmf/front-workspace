@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+
+}
+
+#testDiv1 {
+    border: solid 3px red;
+    width: 50%;
+    height: 300px;
+    margin: 50px;
+    padding: 50px;
+    /* padding-left: 50px 과 같음*/
+}
+
+#testDiv2 {
+    border: solid 3px red;
+    width: 400px;
+    height: 200px;
+    margin: 80px 0px;
+
+}
+
+#testDiv3 {
+    border: solid 3px red;
+    width: 600px;
+    height: 200px;
+    margin: auto;
+}
+
+/* 전체크기는 width + border-width + padding */
+#content-box {
+    border: solid 3px red;
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+}
+/* padding과 border-width에 영향을 받지 않고 width/height만으로 전체크기를 결정 */
+#border-box {
+    border: solid 3px red;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+}

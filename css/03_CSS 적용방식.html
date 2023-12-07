@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_CSS 적용방식.html</title>
+    <style>
+        /* id가 가장 나중에 적용됨 */
+        #desc1 {
+            border: 3px solid green;
+        }
+
+        dt {
+            border: 3px solid yellow;
+        }
+
+        /* dt 다음에 나오는 dd에 적용함 */
+        dt+dd {
+            border: 3px solid turquoise;
+            padding: 3px;
+        }
+    </style>
+    <style>
+        dt+dd {
+            border: 3px solid red;
+        }
+
+        /* rel은  relation, href은 hyper reference */
+    </style>
+    <link rel="stylesheet" href="./sheets/css03.css">
+
+</head>
+
+<body>
+
+    <h3># 웹 페이지에 CSS를 적용하는 방식 3가지</h3>
+
+    <dl>
+        <dt style="color: blueviolet; font-size: 30px;">1. inline CSS (줄 내부 CSS)</dt>
+        <dd id="desc1" class="detail">- style attr을 이용해 해당 요소에 스타일을 부여하는 방식 <br>
+            - 적용 우선순위가 가장 높음 <br>
+            - style 속성의 값으로 CSS 문법을 넣을 수 있음 <br>
+        </dd>
+        <dt>2. internal CSS (페이지 내부 CSS)</dt>
+        <dd class="detail">
+            - &lt;style&gt; 태그를 이용해 현재 웹 페이지에 스타일을 부여하는 방식 <br>
+            - 더 나중에 나온 스타일 시트가 앞의 스타일 시트를 덮어씀 <br>
+        </dd>
+        <dt>3. external CSS (페이지 외부 CSS)</dt>
+        <dd class="detail">
+            - 외부의 .css 파일을 불러와 사용하는 방식 <br>
+            - &lt;link&gt; 태그를 사용해 외부의 css파일을 불러와 사용한다 <br>
+            - 더 나중에 나온 스타일 시트가 앞의 스타일 시트를 덮어씀 <br>
+        </dd>
+    </dl>
+
+    <hr>
+
+    <h3># Q1 : 짝수번째 li의 테두리를 빨간색으로 바꿔</h3>
+    <ul id="quiz1">
+        <li>list-item</li>
+        <li>list-item</li>
+        <li>list-item</li>
+        <li>list-item</li>
+        <li>list-item</li>
+        <li>list-item</li>
+    </ul>
+
+    <hr>
+
+    <h3># Q2 : 첫번째 li와 마지막 li의 글씨색을 빨간색으로</h3>
+    <ul id="quiz2">
+        <li>list-item</li>
+        <li>list-item</li>
+        <li>list-item</li>
+        <li>list-item</li>
+        <li>list-item</li>
+        <li>list-item</li>
+    </ul>
+</body>
+
+</html>
