@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid red;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: white;
+    /* z-index값은 그냥 z축 좌표임, 부모의 z-index값이 0이므로 음수가 되면 부모보다 뒤로 가지만
+    기본적으로 배경색은 흰색이 아닌 투명색이기 때문에 부모보다 뒤에 있는 모습으로 확인할수있음
+    만약 부모의 배경색을 흰색으로 준다면 z-index값을 음수로 준 요소는 배경색인 흰색에 가려져 보이지 않음*/
+
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.gold {
+    background-color: gold;
+    color: white;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+#abs-ex1>:first-child {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    z-index: -2;
+}
+
+#abs-ex1>:nth-child(2) {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    z-index: -1;
+}
+
+#abs-ex1>:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    right: -25px;
+    z-index: 1;
+}
+
+#rel-ex1>:first-child{
+    position: relative;
+    left: 200px /* 기존 위치로부터 200px 이동*/;
+}
+#rel-ex1>:nth-child(2){
+    position: relative;
+    left: 250px;
+}
+#rel-ex1>:nth-child(3){
+    position: relative;
+    left: 300px;
+}
+
+#fixed{
+    position: fixed;
+    right: 200px;
+    bottom: 200px;
+    width: 50%;
+    z-index: 99;
+    background-color: white;
+}
+
+#sticky{
+    position: sticky;
+    top: 0px;
+    left: 100px;
+    width: 50%;
+    z-index: 99;
+    background-color: white;
+}

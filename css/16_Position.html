@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: gray;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16_Position.html</title>
+    <link rel="stylesheet" href="../css/sheets/css16.css">
+</head>
+
+<body>
+    <h3># Position property</h3>
+
+    <ul>
+        <li>포지션을 설정한 요소는 포지션이 설정되지 않은 요소들을 무시하면서 자유롭게 요소를 배치할 수 있다</li>
+        <li>static(default) - 포지션이 설정되지 않은 상태</li>
+        <li>absolute - 절대적인 위치를 설정</li>
+        <li>relative - 상대적인 위치를 설정</li>
+        <li>fixed - 화면에 고정할 위치를 설정, 화면 스크롤을 움직여도 고정된 자리에 위치함</li>
+        <li>sticky - 스크롤이 변하면서 고정될 위치를 설정</li>
+        <li>포지션이 겹치는 요소가 있다면 z-index 속성으로 어떤 요소가 위에 있을지를 설정할 수 있다(z축 설정 기능)</li>
+        <li>기본 z-index는 0이고 기본 요소보다 밑에 깔리도록 설정하고 싶다면 z-index를 음수로 설정할 수도 있다</li>
+
+    </ul>
+
+    <h3># position: absolute</h3>
+    <ul>
+        <li>부모 요소 내부에서 절대적인 위치를 설정</li>
+        <li>만약 부모 요소에 포지션이 설정되어 있지 않다면(=static) 더 위에 있는 조상으로 거슬러 올라감</li>
+        <li>포지션을 설정하고 나면 top, left, bottom, right를 통해 위치를 수정할 수 있다</li>
+    </ul>
+
+    <hr>
+    <div id="abs-ex1" class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, praesentium! Temporibus praesentium doloremque
+        facere eum. Cupiditate, laudantium atque recusandae et maiores temporibus vitae unde, tenetur reiciendis eveniet
+        voluptates odio. Consequatur!
+        <div class="red box">red</div>
+        <div class="gold box">gold</div>
+        <div class="green box">green</div>
+    </div>
+    <hr>
+    <h3># positoin: relative</h3>
+
+    <ul>
+        <li>해당 요소가 원래 있어야할 위치로부터 얼마나 이동할지 설정</li>
+        <li>0, 0으로 두면 원래 있어야할 곳에 있음</li>
+    </ul>
+    <div id="rel-ex1" class="container">
+        원래 있어야할 위치로부터 이동시킨다
+        <div class="red box">red</div>
+        <div class="gold box">gold</div>
+        <div class="green box">green</div>
+    </div>
+
+    <hr>
+
+    <h3># position: fixed</h3>
+    <ul>
+        <li>원래 위치 그런거 없고 그냥 주어지는 좌표값에 따라 위치함</li>
+    </ul>
+
+    <div id="fixed" class="box"> <a href="http://naver.com">누르면 네이버감</a></div>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>66<br><br><br><br>
+    <br><br><br><br><br><br>1<br><br><br><br>2<br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>1<br><br><br><br><br>
+    <br><br><br><br><br>5<br><br><br><br><br><br><br><br><br>8<br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>1<br><br><br><br><br><br><br><br><br><br><br><br>
+    
+
+
+    <div id="sticky" class="box">스티키</div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>1<br><br><br><br><br><br><br>
+    <br><br><br>7<br><br><br><br>1<br><br><br><br><br><br><br>6<br><br><br>2<br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>8<br><br><br><br><br><br><br>
+    <br><br><br><br>1<br><br><br><br><br>5<br><br><br>1<br><br><br><br><br><br>
+    <br><br><br><br><br><br>4<br><br><br><br><br><br><br><br>8<br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>5<br><br><br><br>1<br><br><br><br><br>
+    <br><br>1<br><br><br><br>1<br><br><br><br><br><br><br><br><br>1<br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>2<br><br><br><br><br><br><br><br>
+</body>
+
+</html>

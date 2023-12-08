@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko" style="background-color: gray;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14_Float.html</title>
+    <link rel="stylesheet" href="./sheets/css14.css">
+</head>
+
+<body>
+    <h3># Float</h3>
+
+    <!-- VSCODE 한줄 복사 : Shift + Alt + ↑ , 이클립스는 Ctrl + Alt + ↑ -->
+
+    <ul>
+        <li>해당 요소를 float으로 설정하면 다른 내용들이 해당 요소를 비켜가게 만든다</li>
+        <li>float : left로 설정하면 해당 요소가 왼쪽에 떠있게 되고
+            float : right로 설정하면 오른쪽에 떠있게 된다
+        </li>
+        <li>한글에서 '일반글자처럼 취급' 이랑 느낌이 비슷하다고 보면 될 듯</li>
+        <li>float을 같은 방향으로 설정한 요소는 차곡차곡 쌓인다, 오른쪽에 두개 놓았으면 먼저 놓은놈이 맨오른쪽임</li>
+        <li>float을 다른 방향으로 설정한 요소는 각자의 방향으로 쌓인다</li>
+        <li>clear 속성을 통해 해당 줄에 요소가 계속 쌓이는 것을 막을 수 있다</li>
+        <li>float이 설정된 요소는 해당 요소를 포함한 부모 요소의 크기 결정에 영향을 미치지 못함</li>
+        <li>float요소가 커진다고 이 요소를 담고 있는 부모 요소의 크기가 같이 커지지 않고 튀어나옴</li>
+    </ul>
+    <hr>
+    <h5>float을 같은 방향으로 설정한 경우</h5>
+
+    <div id="float-div1">
+        <img id="img1-1" src="../assets/image/cat.gif" alt="제리">
+        <img id="img1-2" src="../assets/image/Simpsons.gif" alt="제리">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et explicabo!
+
+    </div>
+
+    <hr>
+    <h5>float을 다른 방향으로 설정한 경우</h5>
+
+    <div id="float-div2">
+        <img id="img2-1" src="../assets/image/understand.jpg" alt="완벽이해">
+        <img id="img2-2" src="../assets/image/understand.jpg" alt="완벽이해">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et explicabo!
+
+    </div>
+
+
+    <hr>
+    <h5>claer 속성을 사용</h5>
+
+    <div id="float-div3">
+        <img id="img3-2" src="../assets/image/sdam.png" alt="스담">
+        <img id="img3-1" src="../assets/image/sdam.png" alt="스담">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro
+        deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et explicabo!
+
+    </div>
+
+
+    <hr>
+    <h5>float 요소의 크기에 비해 내용이 부족한 경우 요소의 크기를 float 요소의 크기만큼 늘리는 방법</h5>
+
+    <div id="float-div4">
+        <img id="img4-1" src="../assets/image/ggang.png" alt="깡">
+        <img id="img4-2" src="../assets/image/ggang.png" alt="깡">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio,
+        <!-- 결국 투명한 float 요소를 추가해 문닫는 역할을 하게 한다고 보면 될 듯 -->
+        <div style="clear: right;"></div>
+
+
+    </div>
+
+    <hr>
+    <h5>float 요소의 크기에 비해 내용이 부족한 경우</h5>
+
+    <div id="float-div5">
+        <img id="img5-1" src="../assets/image/ggang.png" alt="깡">
+        <img id="img5-2" src="../assets/image/ggang.png" alt="깡">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio, tenetur laudantium porro deserunt
+        eveniet atque id quidem veritatis pariatur, tempora vitae nam in expedita quibusdam nostrum nemo et
+        explicabo! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores optio,
+        <!-- 결국 투명한 float 요소를 추가해 문닫는 역할을 하게 한다고 보면 될 듯 -->
+
+
+
+    </div>
+
+    <h5>float의 성질을 이용해 레이아웃 구성(오래된 방식)</h5>
+
+    <div id="float-layout">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        
+
+    </div>
+
+    <hr><hr><hr>
+
+
+    <div id="exam" style="text-align: center; color: blue; align-content: center;">
+        <div id="exam1">HEADER</div>
+        <div id="exam2">NAV</div>
+        <div id="exam5">ASIDE</div>
+        <div id="exam3">SECTION</div>
+        <div id="exam4">ARTICLE</div>
+        <div id="exam6">FOOTER</div>
+    </div>
+
+</body>
+
+</html>

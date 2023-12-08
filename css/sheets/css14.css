@@ -1,0 +1,177 @@
+[id*="div"] {
+    /* div를 포함하고 있으면 */
+    border: 3px solid red;
+    width: 400px;
+    text-align: justify;
+
+}
+
+#img1-1 {
+    width: 100px;
+    height: auto;
+    float: right;
+}
+
+#img1-2 {
+    width: 100px;
+    height: auto;
+    float: right;
+}
+
+#img2-1 {
+    width: 100px;
+    height: auto;
+    float: right;
+
+}
+
+#img2-2 {
+    width: 100px;
+    height: auto;
+    float: left;
+
+}
+
+#img3-1 {
+    width: 100px;
+    height: auto;
+    float: left;
+    clear: right;
+
+}
+
+#img3-2 {
+    width: 100px;
+    height: auto;
+    float: right;
+    /* 
+    clear : left는 이 요소 왼쪽에 다른 float요소가 없게 '자신'의 위치를 옮김
+    코드 순서에 따라 적용되므로 나중에 만들어진 요소에서만 사용가능
+    먼저 만들어진 요소는 만들어진 당시 다른 요소가 없기 때문에 이미 clear 상태라서 효과가 없음
+    */
+
+}
+
+#img4-1 {
+    width: 100px;
+    height: auto;
+    float: left;
+}
+
+#img4-2 {
+    width: 200px;
+    height: auto;
+    float: right;
+    clear: left;
+}
+
+#img5-1 {
+    width: 100px;
+    height: auto;
+    float: left;
+}
+
+#img5-2 {
+    width: 200px;
+    height: auto;
+    float: right;
+    clear: left;
+}
+
+#float-layout {
+    border: 1px solid red;
+    color: white;
+}
+
+#float-layout>div {
+    height: 100px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#float-layout>:first-child {
+    background-color: pink;
+    width: 20%;
+}
+
+#float-layout>:nth-child(2) {
+    background-color: red;
+    width: 50%;
+}
+
+#float-layout>:nth-child(3) {
+    background-color: orange;
+    width: 30%;
+}
+
+#float-layout>:nth-child(4) {
+    background-color: skyblue;
+    height: 500px;
+    width: 80%;
+}
+
+#float-layout>:nth-child(5) {
+    background-color: violet;
+    height: 500px;
+    width: 20%;
+}
+
+#float-layout::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#exam{
+    width: 200px;
+    height: 300px;
+}
+[id*=exam]{
+    border: 1px solid red;
+    box-sizing: border-box;
+    
+}
+[id*=exam5]{
+    float: right;
+    clear: left;
+    height: 70%;
+    border: solid 1px black;
+    width: 40%;
+    padding-top: 40%;
+}
+#exam1{
+    height: 10%;
+}
+#exam2{
+    height: 10%;
+}
+#exam3{
+    height: 30%;
+    float: left;
+    width: 60%;
+    border: green 1px solid;
+    padding-top: 15%;
+}
+#exam4{
+    height: 40%;
+    float: left;
+    width: 60%;
+    border: 1px yellow solid;
+    padding-top: 25%;
+
+}
+#exam6{
+    height: 10%;
+    clear: both;
+    border: 1px blue solid;
+}
+
+
+
+/* 
+        <div id="exam3">SECTION</div>
+        <div id="exam4">ARTICLE</div>
+        <div id="exam5">ASIDE</div>
+        <div id="exam6">FOOTER</div>
+*/
