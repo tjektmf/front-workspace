@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17_flex.html</title>
+    <link rel="stylesheet" href="./sheets/css17.css">
+</head>
+
+<body>
+    <h3># display: flex</h3>
+
+    <ul>
+        <li>내부에 속한 요소들의 크기를 자동으로 조절해주는 display 속성</li>
+        <li>레이아웃을 구성할 때 아주 유용한 기능 Float보다 좋음</li>
+        <li>display: flex로 설정한 요소는 flex-container가 되고 내부에 속한 요소들은 flex-item이 된다</li>
+        <li></li>
+    </ul>
+
+    <hr>
+    <!-- div = division -->
+    <h5># dispaly: flex 기본 예제</h5>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+    <hr>
+
+    <h5># flex-direction: row</h5>
+    <div id="direction1" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+    <h5># flex-direction: row-reverse</h5>
+    <div id="direction2" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+    <h5># flex-direction: column</h5>
+    <div id="direction3" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+    <h5># flex-direction: column-reverse</h5>
+    <div id="direction4" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+    <hr>
+
+    <h5># flex-wrap: nowrap (줄을 바꾸지 않음)</h5>
+
+    <div id="wrap1" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+    <h5># flex-wrap: wrap (크기를 조절하지 않고 줄을 바꿈)</h5>
+    <div id="wrap2" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+    <h5># flex-wrap: wrap (크기를 조절하지 않고 줄을 바꿈 근데 아래가 아니라 위로)</h5>
+    <div id="wrap3" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+    <h5># flex-direction: column과 flex-wrap: wrap을 조합하는 경우</h5>
+    <div id="wrap4" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+    <h5># flex-flow: [flex-direction] [flex-wrap]</h5>
+    <div id="flow1" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+    <h5># flex-flow: row-reverse wrap</h5>
+    <div id="flow2" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+    <hr>
+
+    <h5># justify-content: flex-start (default)</h5>
+    <div id="justify1" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <h5># justify-content: flex-end</h5>
+    <div id="justify2" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+    <h5># justify-content: center</h5>
+    <div id="justify3" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <h5># justify-content: space-between</h5>
+    <div id="justify4" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <h5># justify-content: space-around</h5>
+    <div id="justify5" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <h5># justify-content: space-evenly</h5>
+    <div id="justify6" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <hr>
+
+    <h3># display:flex를 사용해 웹 페이지 레이아웃 구성</h3>
+    <div class="flex-layout">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+
+    <h3># example1</h3>
+    <div class="example1">
+        <div>1</div>
+        <div>
+            <div>2-1</div>
+            <div>2-2</div>
+            <div>2-3</div>
+            <div>2-4</div>
+        </div>
+        <div>
+            <div>3-1</div>
+            <div>3-2</div>
+            <div>3-3</div>
+            <div>3-4</div>
+        </div>
+        <div>4</div>
+
+    </div>
+
+    <div id="quiz">
+        <div>
+            <div>1</div>
+        </div>
+        <div id="inner1">
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <div id="inner2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div>
+            <div>5</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

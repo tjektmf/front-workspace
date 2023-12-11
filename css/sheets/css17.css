@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    /* 이 요소의 자식 요소들은 모두 flex-item 취급을 받게 됨 */
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.flex-item {
+    padding: 30px;
+}
+
+.flex-container>.flex-item {
+    background-color: orange;
+    padding: 20px;
+    margin: 10px;
+    width: 90px;
+}
+
+.flex-container:first-of-type>.flex-item:nth-child(2) {
+    width: 200px;
+    background-color: peachpuff;
+}
+
+#direction1 {
+    flex-direction: row;
+    /* 기본값, 하나의 행으로 표시 왼쪽부터 오른쪽으로 */
+}
+
+#direction2 {
+    flex-direction: row-reverse;
+    /* 행 모양인데 오른쪽부터 왼쪽으로 표시*/
+}
+
+
+/* column-reverse 또는 row-reverse를 사용하면 요소들의 start와 end의 순서도 뒤바뀝니다. */
+
+#direction3 {
+    flex-direction: column;
+    /* 하나의 열로 표시 위에서 아래로 표시*/
+    width: max-content;
+}
+
+#direction3>* {
+    /* 행에선 맞춰주는ㄷ 열에서 width 50% 해주면 잘 안맞춰줌 
+    고정값에 max/min - content로 맞춰짐*/
+    width: 300px;
+}
+
+#direction4 {
+    flex-direction: column-reverse;
+    /* 아래에서 위로 표시*/
+    width: min-content;
+}
+
+#direction4>* {
+    width: 300px;
+}
+
+#wrap1 {
+    flex-wrap: nowrap;
+    /* 요소 크기가 넘치는 경우 줄을 바꾸지 않고 요소의 크기를 줄임*/
+}
+
+#wrap1>.flex-item {
+    width: 200px;
+}
+
+#wrap2 {
+    flex-wrap: wrap;
+    /* 요소 크기가 넘치는 경우 줄을 바꿈*/
+}
+
+#wrap2>.flex-item {
+    width: 200px;
+}
+
+#wrap3 {
+    flex-wrap: wrap-reverse;
+    /* 요소 크기가 넘치면 줄을 위로 바꿈, 요소를 윗줄로 올려버림*/
+
+}
+
+#wrap3>.flex-item {
+    width: 200px;
+}
+
+#wrap4 {
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    height: 80vw;
+
+}
+
+#wrap4>.flex-item {
+    height: 200px;
+}
+
+#flow1 {
+    flex-flow: row nowrap;
+    /* 기본값 */
+
+}
+
+#flow2 {
+    flex-flow: row-reverse wrap;
+    /* 두 값을 한번에 조절할 수 있는 간편속성, border에서처럼 1px solid color 막 집어넣는걸 말함 */
+}
+
+#justify1 {
+    justify-content: flex-start;
+    /* flex가 시작하는 곳부터 item이 시작되도록 정렬 (default) */
+}
+
+#justify2 {
+    justify-content: flex-end;
+    /* flex의 끝부분으로 정렬, 오른쪽정렬 느낌인가?*/
+}
+
+#justify3 {
+    justify-content: center;
+    /* 내부 아이템들을 가운데 정렬 */
+}
+
+[id^="justify"]>.flex-item {
+    height: 200px;
+
+}
+
+#justify4 {
+    justify-content: space-between;
+    /* 좌우에 일단 붙이고 가운데 대충 적절히 정렬 */
+}
+
+#justify5 {
+    justify-content: space-around;
+    /* 걍 적당히 정렬*/
+}
+
+#justify6 {
+    justify-content: space-evenly;
+    /* 좌우와 아이템사이를 같은 비율로 정렬 */
+}
+
+.flex-layout {
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    background-color: red;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.flex-layout>div {
+    padding: 30px;
+}
+
+.flex-layout>:first-child {
+    width: 70%;
+    height: 30%;
+    background-color: cornsilk;
+}
+
+.flex-layout>:nth-child(2) {
+    width: 30%;
+    height: 30%;
+    background-color: skyblue;
+}
+
+.flex-layout>:nth-child(3) {
+    display: flex;
+    width: 60%;
+    height: 50%;
+    background-color: gray;
+    flex-direction: row-reverse;
+}
+
+.flex-layout>:nth-child(4) {
+    width: 40%;
+    height: 50%;
+    background-color: plum;
+}
+
+.flex-layout>:nth-child(5) {
+    width: 100%;
+    height: 20%;
+    background-color: burlywood;
+}
+
+.example1 {
+    display: flex;
+    background-color: grey;
+    font-size: 30px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: row;
+    width: 800px;
+    height: 800px;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+
+
+.example1>* {
+
+    background-color: red;
+
+    align-content: flex-start;
+
+}
+
+.example1>:first-child {
+    width: 42%;
+    height: 42%;
+
+}
+
+.example1>:nth-child(2) {
+    display: flex;
+    background-color: gray;
+    flex-wrap: wrap;
+    width: 45%;
+    height: 45%;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+
+}
+
+.example1>:nth-child(2)>* {
+    background-color: red;
+    margin: 2px;
+    width: 45%;
+    height: 45%;
+
+
+}
+
+.example1>:nth-child(3) {
+    display: flex;
+    background-color: gray;
+    flex-wrap: wrap;
+    width: 45%;
+    height: 45%;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.example1>:nth-child(3)>* {
+    background-color: red;
+    margin: 2px;
+    width: 45%;
+    height: 45%;
+}
+
+.example1>:nth-child(4) {
+
+    width: 42%;
+    height: 42%;
+}
+
+#quiz {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    height: 800px;
+    width: 1000px;
+}
+
+#quiz>* {
+    border: solid black 1px;
+}
+
+#quiz>:first-child>div {
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+}
+
+#quiz>:first-child {
+    width: 40%;
+    height: 50%;
+    background-color: white;
+    padding: 10px;
+
+}
+
+#quiz>:nth-child(2) {
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+}
+
+
+#inner1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+#inner1>div {
+    width: 48%;
+    height: 47%;
+    background-color: aqua;
+}
+
+#inner2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+}
+#inner2>div {
+    width: 48%;
+    height: 47%;
+    background-color: aqua;
+}
+#quiz>:nth-child(3) {
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+}
+
+#quiz>:nth-child(4) {
+    width: 40%;
+    height: 50%;
+    background-color: white;
+    padding: 10px;
+}
+
+#quiz>:nth-child(4)>div {
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+}

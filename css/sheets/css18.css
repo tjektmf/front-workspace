@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+
+
+}
+
+.flex-container>div {
+    width: 50%;
+    height: 50%;
+}
+
+.flex-container>:first-child {
+    background-color: red;
+    /* 모든 property를 3초의 시간 동안 변화시킴 */
+    transition: all 3s;
+}
+
+.flex-container>:first-child:hover {
+    background-color: blue;
+}
+
+
+.flex-container>:nth-child(2) {
+    background-color: orange;
+    /* transition: all 1s; */
+    /* 이렇게 따로따로 시간을 나눠서 줄 수도 있음 */
+    transition-property: background-color, font-size padding, color;
+    transition-duration: 3s, 2s, 1s, 3s;
+}
+
+/* 폰트사이즈 패딩 글자색 전부 트렌지션의 영향을 받아 부여한 시간동안 변화함 */
+.flex-container>:nth-child(2):hover {
+    background-color: blueviolet;
+    color: white;
+    font-size: 65px;
+    padding: 80px;
+}
+
+.flex-container>:nth-child(3) {
+    background-color: green;
+
+}
+
+.flex-container>:nth-child(3)>div {
+    border: solid black 1px;
+    color: black;
+    text-align: center;
+    width: 40%;
+    background-color: aqua;
+    margin: 5%;
+    transition: width 2s;
+}
+
+.flex-container>:nth-child(3)>div:first-child {
+    transition-timing-function: ease;
+}
+
+.flex-container>:nth-child(3)>div:nth-child(2) {
+    transition-timing-function: linear;
+}
+
+.flex-container>:nth-child(3)>div:nth-child(3) {
+    transition-timing-function: ease-in;
+}
+
+.flex-container>:nth-child(3)>div:nth-child(4) {
+    transition-timing-function: ease-out;
+}
+
+.flex-container>:nth-child(3)>div:nth-child(5) {
+    transition-timing-function: ease-in-out;
+}
+
+
+.flex-container>:nth-child(3)>div:hover {
+    background-color: gray;
+    width: 90%;
+
+}
+
+.flex-container>:nth-child(4) {
+    background-color: blue;
+    color: white;
+}
+
+.flex-container>:nth-child(4)>div {
+    border: solid 1px black;
+    width: 40%;
+    margin: 5%;
+    height: 80px;
+    transition: width 3s;
+    background-color: blue;
+    color: white;
+}
+
+.flex-container>:nth-child(4)>div:first-child {
+    transition-delay: 0s; /* 기본값, 지연시간 없이 바로 트랜지션 작동*/
+
+}
+.flex-container>:nth-child(4)>div:nth-child(2) {
+    transition-delay: 2s; /* 2초의 지연시간 이후 트랜지션 작동*/
+
+}
+
+.flex-container>:nth-child(4)>div:hover {
+    background-color: blue;
+    color: white;
+    width: 90%;
+}
