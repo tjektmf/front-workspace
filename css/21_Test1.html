@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GithubCopy</title>
+    <link rel="stylesheet" href="./sheets/Test1.css">
+    <script src="https://kit.fontawesome.com/0b163d8ef1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="grid2" class="grid top line">
+        <div class="top1">&nbsp;
+            <button aria-label="Open global navigation menu"
+                data-action="click:deferred-side-panel#loadPanel click:deferred-side-panel#panelOpened"
+                data-show-dialog-id="dialog-a24927ca-c0dc-4717-9f68-ca6e78c80124"
+                id="dialog-show-dialog-a24927ca-c0dc-4717-9f68-ca6e78c80124" type="button" data-view-component="true"
+                class="Button Button--iconOnly Button--secondary Button--medium AppHeader-button color-bg-transparent p-0 color-fg-muted">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                    data-view-component="true" class="octicon octicon-three-bars Button-visual">
+                    <path
+                        d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z">
+                    </path>
+                </svg>
+            </button>&nbsp;&nbsp;
+            <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true"
+                class="octicon octicon-mark-github v-align-middle color-fg-default">
+                <path
+                    d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                </path>
+            </svg> &nbsp;&nbsp; <span class="AppHeader-context-item-label  " style="font-weight: bold;">
+
+                Dashboard
+            </span>&nbsp;&nbsp;
+        </div>
+        <div class="top2">
+
+            <button type="button" data-target="qbsearch-input.inputButton"
+                data-action="click:qbsearch-input#handleExpand"
+                class="AppHeader-searchButton form-control input-contrast text-left color-fg-subtle no-wrap placeholder"
+                data-hotkey="s,/"
+                data-analytics-event="{&quot;category&quot;:&quot;Global navigation&quot;,&quot;action&quot;:&quot;SEARCH&quot;,&quot;label&quot;:null}">
+                <div class="overflow-hidden">
+                    <span id="qb-input-query" data-target="qbsearch-input.inputButtonText">
+                        Type <kbd class="AppHeader-search-kbd">/</kbd> to search
+                    </span>
+                </div>
+            </button>&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <button id="global-create-menu-button" popovertarget="global-create-menu-overlay"
+                aria-label="Create something new" aria-controls="global-create-menu-list" aria-haspopup="true"
+                type="button" data-view-component="true"
+                class="AppHeader-button Button--secondary Button--small Button width-auto color-fg-muted"
+                aria-describedby="tooltip-23dee948-9e5e-40c2-80af-e82042ecfa39"> <span class="Button-content">
+                    <span class="Button-visual Button-leadingVisual">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-plus">
+                            <path
+                                d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="Button-label"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                            width="16" data-view-component="true" class="octicon octicon-triangle-down">
+                            <path
+                                d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z">
+                            </path>
+                        </svg></span>
+                </span>
+            </button>&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <a href="/issues"
+                data-analytics-event="{&quot;category&quot;:&quot;Global navigation&quot;,&quot;action&quot;:&quot;ISSUES_HEADER&quot;,&quot;label&quot;:null}"
+                id="icon-button-933679f4-bdf8-4fda-8593-ce2fa4b4bbb1"
+                aria-labelledby="tooltip-66b396cf-3b7a-4b05-bfbe-008e4d39c657" data-view-component="true"
+                class="Button Button--iconOnly Button--secondary Button--medium AppHeader-button color-fg-muted"> <svg
+                    aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                    data-view-component="true" class="octicon octicon-issue-opened Button-visual">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
+                </svg>
+            </a>&nbsp;&nbsp;&nbsp;
+
+            <a href="/pulls"
+                data-analytics-event="{&quot;category&quot;:&quot;Global navigation&quot;,&quot;action&quot;:&quot;PULL_REQUESTS_HEADER&quot;,&quot;label&quot;:null}"
+                id="icon-button-69012198-f23d-4b96-8311-1255d6827731"
+                aria-labelledby="tooltip-e04874cc-d448-4035-bfa1-aad064418554" data-view-component="true"
+                class="Button Button--iconOnly Button--secondary Button--medium AppHeader-button color-fg-muted"> <svg
+                    aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                    data-view-component="true" class="octicon octicon-git-pull-request Button-visual">
+                    <path
+                        d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z">
+                    </path>
+                </svg>
+            </a>&nbsp;&nbsp;&nbsp;
+
+            <a id="AppHeader-notifications-button" href="/notifications" aria-label="Notifications" data-hotkey="g n"
+                data-target="notification-indicator.link"
+                data-analytics-event="{&quot;category&quot;:&quot;Global navigation&quot;,&quot;action&quot;:&quot;NOTIFICATIONS_HEADER&quot;,&quot;label&quot;:&quot;icon:read&quot;}"
+                data-view-component="true"
+                class="Button Button--iconOnly Button--secondary Button--medium AppHeader-button color-fg-muted"
+                aria-describedby="tooltip-fa168a58-b083-43ad-b7e7-3839ca7562ed"> <svg aria-hidden="true" height="16"
+                    viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+                    class="octicon octicon-inbox Button-visual">
+                    <path
+                        d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z">
+                    </path>
+                </svg>
+            </a>&nbsp;&nbsp;&nbsp;
+
+            <img src="https://avatars.githubusercontent.com/u/150633854?v=4" alt="" size="32" height="32" width="32"
+                data-view-component="true" class="avatar circle">
+
+
+        </div>
+    </div>
+    <hr>
+
+    <div id="grid" class="grid">
+        <div class="sticky grid leftside line">
+            <div id="sticky1">
+
+                <div id="leftside1">
+                    <div id="leftside1-1">
+                        <h2 class="f4 hide-sm hide-md mb-1 f5 d-flex flex-justify-between">
+                            Top Repositories
+                            <a href="/new"
+                                data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;NEW_REPOSITORY_BUTTON&quot;,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:150633854,&quot;metadata&quot;:null,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}"
+                                data-hydro-click-hmac="033078976cd69d8d4b39a13c5c5fc1aab54c27c2474d1854b606e237573cc8bb"
+                                data-view-component="true" class="Button--primary Button--small Button"> <span
+                                    class="Button-content">
+                                    <span class="Button-visual Button-leadingVisual">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            data-view-component="true" class="octicon octicon-repo">
+                                            <path
+                                                d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="Button-label">New</span>
+                                </span>
+                            </a>
+                        </h2>
+
+
+
+                    </div>
+                    <div id="leftside1-2">
+
+                        <input type="text"
+                            class="form-control input-contrast input-block mb-3 js-filterable-field js-your-repositories-search"
+                            id="dashboard-repos-filter-left" placeholder="Find a repository…"
+                            aria-label="Find a repository…" data-url="/" data-query-name="q" value=""
+                            autocomplete="off">
+
+                        <!-- Find a Repositories -->
+                    </div>
+                    <div id="leftside1-3" class="repos">
+
+                        <img src="https://avatars.githubusercontent.com/u/150633854?s=16&amp;v=4"
+                            class=" avatar avatar-user avatar-small circle" width="16" height="16" alt="GitStudy"
+                            aria-label="Repository">
+
+                        &nbsp;tjektmf/front-workspace
+                    </div>
+                    <div id="leftside1-4" class="repos">
+
+                        <img src="https://avatars.githubusercontent.com/u/150633854?s=16&amp;v=4"
+                            class=" avatar avatar-user avatar-small circle" width="16" height="16" alt="GitStudy"
+                            aria-label="Repository">
+
+                        &nbsp;tjektmf/GitStudy
+                    </div>
+                </div>
+
+                <div id="leftside2">
+                    <div id="leftside2-1">
+
+                        <h2 class="f5 mt-md-4 mt-0">Recent activity</h2>
+                    </div>
+                    <div id="leftside2-2">
+
+                        <svg aria-label="Open Pull Request" role="img" height="16" viewBox="0 0 16 16" version="1.1"
+                            width="16" data-view-component="true"
+                            class="octicon octicon-git-pull-request color-fg-open">
+                            <path
+                                d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z">
+                            </path>
+                        </svg>
+
+                        &nbsp;DS3
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="main1" class="grid main line">
+            <div id="main1-1">
+                <div id="m11" style="font-size: 40px;">Home</div>
+                <div id="m12">
+                    <h3>Updates to your homepage feed</h3>
+                    We've combined the power of the Following feed with the For you feed so there’s one place to
+                    discover content on GitHub.
+                    There’s improved filtering so you can customize your feed exactly how you like it, and a shiny new
+                    visual design. ✨
+                    <br><br>
+
+                    We've combined the power of the Following feed with the For you feed so there’s one place to
+                    discover content on GitHub. There’s improved filtering so you can customize your feed exactly how
+                    you like it, and a shiny new visual design. ✨
+                    <br><br>Learn more
+                </div>
+                <div id="m13" style="font-size: 40px;">
+
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-code color-fg-subtle">
+                        <path
+                            d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z">
+                        </path>
+                    </svg>
+
+                    &nbsp;Start writing code
+                </div>
+                <div id="m14">
+                    <h3>Start a new repository</h3>
+                    A repository contains all of your project's files, revision history, and collaborator discussion.
+                    <br>
+                    <br>
+                    tjektmf / <input class="form-control input-sm flex-auto" type="text" name="repository[name]"
+                        placeholder="name your new repository..." aria-label="Repository name">
+                    <br><br>
+                    Public
+                    <br>
+                    Anyone on the intetnet can see this repository
+                    Follow this exercise to try the GitHub flow
+                    GitHub's “Hello World” tutorial teaches you essentials, where you create your own repository and
+                    learn GitHub's pull request workflow for creating and reviewing code.
+
+                </div>
+                <div id="m15">
+                    <h3>Introduce yourself with a profile README</h3>
+                    Share information about yourself by creating a profile README, which appears at the top of your
+                    profile page.
+                    <br>
+                    Anyone on the intetnet can see this repository
+                    Follow this exercise to try the GitHub flow
+                    GitHub's “Hello World” tutorial teaches you essentials, where you create your own repository and
+                    learn GitHub's pull request workflow for creating and reviewing code.
+                    <br>
+                    Anyone on the intetnet can see this repository
+                    Follow this exercise to try the GitHub flow
+                    GitHub's “Hello World” tutorial teaches you essentials, where you create your own repository and
+                    learn GitHub's pull request workflow for creating and reviewing code.
+                </div>
+                <div id="m16" style="font-size: 40px;">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-tools color-fg-subtle">
+                        <path
+                            d="M5.433 2.304A4.492 4.492 0 0 0 3.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 1 1-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 0 1 2 6a5.993 5.993 0 0 1 2.567-4.92 1.482 1.482 0 0 1 1.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 0 0 .28 0l.75-.51A.249.249 0 0 0 9 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 0 1 1.673.04A5.993 5.993 0 0 1 14 6a5.996 5.996 0 0 1-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.752.752 0 0 1-1.094.714.75.75 0 0 1-.404-.64l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.495 4.495 0 0 0 12.5 6a4.492 4.492 0 0 0-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 0 1-.767 1.448l-.75.51a1.75 1.75 0 0 1-1.966 0l-.75-.51A1.75 1.75 0 0 1 5.5 5.282V2.463c0-.092-.043-.142-.067-.159Z">
+                        </path>
+                    </svg>&nbsp;Use tools of the trade
+                </div>
+                <div id="m17">
+                    <h3>Simplify your development workflow with a GUI</h3>
+
+                    Install GitHub Desktop to visualize, commit, and push changes without ever touching the command
+                    line.
+                    <br>
+                    Anyone on the intetnet can see this repository
+                    Follow this exercise to try the GitHub flow
+                    GitHub's “Hello World” tutorial teaches you essentials, where you create your own repository and
+                    learn GitHub's pull request workflow for creating and reviewing code.
+                    <br>
+                    Anyone on the intetnet can see this repository
+                    Follow this exercise to try the GitHub flow
+                    GitHub's “Hello World” tutorial teaches you essentials, where you create your own repository and
+                    learn GitHub's pull request workflow for creating and reviewing code.
+                </div>
+                <div id="m18">
+                    <h3>Get AI-based coding suggestions</h3>
+                    Try GitHub Copilot free for 30 days, which suggests entire functions in real time, right from your
+                    editor.
+                    <br>
+                    Anyone on the intetnet can see this repository
+                    Follow this exercise to try the GitHub flow
+                    GitHub's “Hello World” tutorial teaches you essentials, where you create your own repository and
+                    learn GitHub's pull request workflow for creating and reviewing code.
+                    <br>
+                    Anyone on the intetnet can see this repository
+                    Follow this exercise to try the GitHub flow
+                    GitHub's “Hello World” tutorial teaches you essentials, where you create your own repository and
+                    learn GitHub's pull request workflow for creating and reviewing code.
+                </div>
+                <div id="m19">
+
+                    <div class="d-flex flex-items-between footer container-lg my-5 px-0" role="contentinfo">
+                        <div class="col-lg-4 list-style-none mr-lg-5">
+                            <a title="Home page" class="d-none d-lg-flex footer-octicon footer-octicon no-underline"
+                                href="https://github.com">
+                                <div>
+                                    <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24"
+                                        data-view-component="true"
+                                        class="octicon octicon-mark-github d-block mr-2 float-left">
+                                        <path
+                                            d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                                        </path>
+                                    </svg>
+                                </div>
+
+                                <div>
+                                    <span class="f6 color-fg-muted">
+                                        © 2023 GitHub, Inc.
+                                    </span>
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="d-flex flex-justify-start flex-row flex-auto">
+                            <ul class="col-4 col-sm-4 col-lg-4 col-xl-3 list-style-none f6 color-fg-muted pl-lg-4">
+                                <li class="mb-1"><a class="Link--secondary" href="https://github.blog"
+                                        data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;text:blog&quot;}">Blog</a>
+                                </li>
+                                <li class="mb-1"><a class="Link--secondary"
+                                        analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to about&quot;,&quot;label&quot;:&quot;text:about&quot;}"
+                                        href="https://github.com/about">About</a></li>
+                                <li class="mb-1"><a class="Link--secondary" href="https://shop.github.com"
+                                        data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to shop&quot;,&quot;label&quot;:&quot;text:shop&quot;}">Shop</a>
+                                </li>
+
+                                <li class="mb-1"><a href="https://support.github.com?tags=dotcom-footer"
+                                        class="Link--secondary"
+                                        data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}">Contact
+                                        GitHub</a></li>
+                                <li class="mb-1"><a href="/pricing" class="Link--secondary"
+                                        data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Pricing&quot;,&quot;label&quot;:&quot;text:Pricing&quot;}">Pricing</a>
+                                </li>
+                            </ul>
+
+                            <ul class="col-4 col-sm-4 col-lg-4 col-xl-3 list-style-none f6 color-fg-muted pl-lg-4">
+                                <li class="mb-1"><a class="Link--secondary" href="https://docs.github.com"
+                                        data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:api&quot;}">API</a>
+                                </li>
+                                <li class="mb-1"><a class="Link--secondary" href="https://services.github.com"
+                                        data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to training&quot;,&quot;label&quot;:&quot;text:training&quot;}">Training</a>
+                                </li>
+
+                                <li class="mb-1"><a class="Link--secondary" href="https://www.githubstatus.com/"
+                                        data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;}">Status</a>
+                                </li>
+                                <li class="mb-1"><a class="Link--secondary" href="/security"
+                                        data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;}">Security</a>
+                                </li>
+                            </ul>
+
+                            <ul class="col-4 col-sm-4 col-lg-4 col-xl-3 list-style-none f6 color-fg-muted pl-lg-4">
+                                <li class="mb-1"><a class="Link--secondary"
+                                        href="https://docs.github.com/site-policy/github-terms/github-terms-of-service"
+                                        data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}">Terms</a>
+                                </li>
+                                <li class="mb-1"><a class="Link--secondary"
+                                        href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement"
+                                        data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}">Privacy</a>
+                                </li>
+                                <li class="mb-1"><a class="Link--secondary"
+                                        analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to help&quot;,&quot;label&quot;:&quot;text:Docs&quot;}"
+                                        href="https://docs.github.com">Docs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="main1-2">
+                <div id="wow"><i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s;" ></i>&nbsp;보노보노를 누르면 깃허브로 이동합니다&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s;" ></i></div>
+                <div id="bono"><a href="https://github.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuZH7a9_yuWMQzTPh-HrsnT9nlGwg0PjZxdg&usqp=CAU" alt="보노보노"></div></a>
+                <div id="m12">
+                    <div class="mb-3 dashboard-changelog color-bg-default border color-border-muted p-3 rounded-2">
+                        <h2 class="f5 text-bold mb-3">Latest changes</h2>
+
+                        <ul class="list-style-none">
+                            <li class="TimelineItem TimelineItem--condensed ml-1 pt-0 pb-3">
+                                <div class="TimelineItem-badge mt-0 color-bg-transparent">
+                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                        data-view-component="true" class="octicon octicon-dot-fill mb-2">
+                                        <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
+                                    </svg>
+                                </div>
+                                <div class="TimelineItem-body mt-n1">
+                                    <div class="text-small color-fg-muted dashboard-changelog-timestamp"><relative-time
+                                            datetime="2023-12-08T14:29:49Z" class="no-wrap"
+                                            title="Dec 8, 2023, 11:29 PM GMT+9">Dec 8, 2023</relative-time></div>
+                                    <a class="Link--primary line-clamp-2"
+                                        href="https://github.blog/changelog/2023-12-08-upcoming-changes-to-assignment-repositories-and-starter-code-in-github-classroom">Upcoming
+                                        Changes to Assignment Repositories and Starter Code in GitHub Classroom</a>
+                                </div>
+                            </li>
+                            <li class="TimelineItem TimelineItem--condensed ml-1 pt-0 pb-3">
+                                <div class="TimelineItem-badge mt-0 color-bg-transparent">
+                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                        data-view-component="true" class="octicon octicon-dot-fill mb-2">
+                                        <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
+                                    </svg>
+                                </div>
+                                <div class="TimelineItem-body mt-n1">
+                                    <div class="text-small color-fg-muted dashboard-changelog-timestamp"><relative-time
+                                            datetime="2023-12-07T19:53:58Z" class="no-wrap"
+                                            title="Dec 8, 2023, 4:53 AM GMT+9">Dec 8, 2023</relative-time></div>
+                                    <a class="Link--primary line-clamp-2"
+                                        href="https://github.blog/changelog/2023-12-07-dependabot-grouped-security-updates-public-beta">Dependabot
+                                        Grouped Security Updates Public Beta</a>
+                                </div>
+                            </li>
+                            <li class="TimelineItem TimelineItem--condensed ml-1 pt-0 pb-3">
+                                <div class="TimelineItem-badge mt-0 color-bg-transparent">
+                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                        data-view-component="true" class="octicon octicon-dot-fill mb-2">
+                                        <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
+                                    </svg>
+                                </div>
+                                <div class="TimelineItem-body mt-n1">
+                                    <div class="text-small color-fg-muted dashboard-changelog-timestamp"><relative-time
+                                            datetime="2023-12-06T17:22:01Z" class="no-wrap"
+                                            title="Dec 7, 2023, 2:22 AM GMT+9">Dec 7, 2023</relative-time></div>
+                                    <a class="Link--primary line-clamp-2"
+                                        href="https://github.blog/changelog/2023-12-06-updates-to-repository-pages">Updates
+                                        to repository pages</a>
+                                </div>
+                            </li>
+                            <li class="TimelineItem TimelineItem--condensed ml-1 pt-0 pb-0">
+                                <div class="TimelineItem-badge mt-0 color-bg-transparent">
+                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                        data-view-component="true" class="octicon octicon-dot-fill mb-2">
+                                        <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
+                                    </svg>
+                                </div>
+                                <div class="TimelineItem-body mt-n1">
+                                    <div class="text-small color-fg-muted dashboard-changelog-timestamp"><relative-time
+                                            datetime="2023-12-06T11:58:31Z" class="no-wrap"
+                                            title="Dec 6, 2023, 8:58 PM GMT+9">Dec 6, 2023</relative-time></div>
+                                    <a class="Link--primary line-clamp-2"
+                                        href="https://github.blog/changelog/2023-12-06-new-organization-repositories-list-feature-preview">New
+                                        Organization Repositories List Feature Preview</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="ml-1 pt-2 pl-4 border-left color-border-muted">
+                            <a class="text-small mt-2 Link--muted" href="https://github.blog/changelog">View changelog
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="m22">
+                    <div class="mb-5 color-bg-default border color-border-muted p-3 rounded-2" role="navigation"
+                        aria-label="Explore repositories">
+                        <h2 class="f5 text-bold">
+                            Explore repositories
+                        </h2>
+                        <div data-view-component="true">
+                            <div data-view-component="true" class="py-3 border-bottom">
+                                <div data-view-component="true" class="Truncate d-flex flex-justify-between">
+                                    <span style="word-wrap:normal;max-width: 300px;" data-view-component="true"
+                                        class="Truncate-text ws-normal flex-1"> <img
+                                            src="https://avatars.githubusercontent.com/u/65075134?s=40&amp;v=4"
+                                            alt="@Glanceyes profile" size="20" height="20" width="20"
+                                            data-view-component="true"
+                                            class="avatar avatar-small circle box-shadow-none mr-1">
+                                        <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;DISCOVER_REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:583011836,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:150633854,&quot;originating_url&quot;:&quot;https://github.com/&quot;}}"
+                                            data-hydro-click-hmac="6eee2a03aad5ba6c1d4fd9ad17943988ada9d190e7eef2099f13258ba45d65cc"
+                                            href="/Glanceyes/Sogang-University-Computer-Science"
+                                            data-view-component="true" class="Link color-fg-default text-bold">
+                                            Glanceyes <span data-view-component="true"
+                                                class="color-fg-muted text-light">/</span>
+                                            Sogang-University-Computer-Science
+                                        </a></span>
+                                    <span data-view-component="true" class="Truncate-text flex-shrink-0">
+                                        <template class="js-unstar-confirmation-dialog-template">
+                                            <div class="Box-header">
+                                                <h2 class="Box-title">Unstar this repository?</h2>
+                                            </div>
+                                            <div class="Box-body">
+                                                <p class="mb-3">
+                                                    This will remove {{ repoNameWithOwner }} from the {{ listsWithCount
+                                                    }} that it's been added to.
+                                                </p>
+                                                <div class="form-actions">
+                                                    <!-- '"` --><!-- </textarea></xmp> -->
+                                                    <form class="js-social-confirmation-form" data-turbo="false"
+                                                        action="{{ confirmUrl }}" accept-charset="UTF-8" method="post">
+                                                        <input type="hidden" name="authenticity_token"
+                                                            value="{{ confirmCsrfToken }}">
+                                                        <input type="hidden" name="confirm" value="true">
+                                                        <button data-close-dialog="true" type="submit"
+                                                            data-view-component="true"
+                                                            class="btn-danger btn width-full"> Unstar
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </template>
+
+                                        <div data-view-component="true"
+                                            class="js-toggler-container js-social-container starring-container d-flex">
+                                            <div data-view-component="true" class="starred BtnGroup flex-1 ml-0">
+                                                <!-- '"` --><!-- </textarea></xmp> -->
+                                                <form
+                                                    class="js-social-form BtnGroup-parent flex-auto width-full js-deferred-toggler-target"
+                                                    data-turbo="false"
+                                                    action="/Glanceyes/Sogang-University-Computer-Science/unstar"
+                                                    accept-charset="UTF-8" method="post"><input type="hidden"
+                                                        name="authenticity_token"
+                                                        value="sqP5xVMpJanzgC2y3ns53Qw2cXdpCuDsl9k_hrm_nKmj25WvumTGUvcgst9YOchZEr-2k0g_3x0l92tcAf-TRw"
+                                                        autocomplete="off">
+                                                    <input type="hidden"
+                                                        value="e5V2LVAXzA4RLX-pWVd2hGZMLzRWNA5DFJEUplBTObRq7RpHuVov9RWN4MTfFYcAeMXo0HcBMbKmv0B86BM2Wg"
+                                                        data-csrf="true" class="js-confirm-csrf-token">
+                                                    <input type="hidden" name="context" value="trending">
+                                                    <button
+                                                        data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;DISCOVER_REPOSITORIES&quot;,&quot;target&quot;:&quot;STAR_REPOSITORIES&quot;,&quot;record_id&quot;:583011836,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:150633854,&quot;originating_url&quot;:&quot;https://github.com/&quot;}}"
+                                                        data-hydro-click-hmac="48787579da27e2c936b1b9188e1520a90df7efddff933045a5128b23380ceedd"
+                                                        data-ga-click="Repository, click unstar button, action:dashboard#index; text:Unstar"
+                                                        aria-label="Unstar this repository" type="submit"
+                                                        data-view-component="true"
+                                                        class="rounded-left-2 btn-sm btn BtnGroup-item"> <svg
+                                                            aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                                            version="1.1" width="16" data-view-component="true"
+                                                            class="octicon octicon-star-fill starred-button-icon d-none d-md-none mr-2">
+                                                            <path
+                                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z">
+                                                            </path>
+                                                        </svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                                            version="1.1" width="16" data-view-component="true"
+                                                            class="octicon octicon-star-fill starred-button-icon mr-0 d-inline-block">
+                                                            <path
+                                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z">
+                                                            </path>
+                                                        </svg>
+                                                        <span data-view-component="true" class="d-none d-md-none">
+                                                            Starred
+                                                        </span>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                            <div data-view-component="true" class="unstarred BtnGroup ml-0 flex-1">
+                                                <!-- '"` --><!-- </textarea></xmp> -->
+                                                <form class="js-social-form BtnGroup-parent flex-auto width-full"
+                                                    data-turbo="false"
+                                                    action="/Glanceyes/Sogang-University-Computer-Science/star"
+                                                    accept-charset="UTF-8" method="post"><input type="hidden"
+                                                        name="authenticity_token"
+                                                        value="lnlJbI4imXOAje2TbEPW1T-lmlP2sdHeCiI3F4cARo_7l4fqzntob4VKjaT5JRzMSXwv0aDNCW9g40NdBJrkRA"
+                                                        autocomplete="off">
+                                                    <input type="hidden" name="context" value="trending">
+                                                    <button
+                                                        data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;DISCOVER_REPOSITORIES&quot;,&quot;target&quot;:&quot;STAR_REPOSITORIES&quot;,&quot;record_id&quot;:583011836,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:150633854,&quot;originating_url&quot;:&quot;https://github.com/&quot;}}"
+                                                        data-hydro-click-hmac="48787579da27e2c936b1b9188e1520a90df7efddff933045a5128b23380ceedd"
+                                                        data-ga-click="Repository, click star button, action:dashboard#index; text:Star"
+                                                        aria-label="Star this repository" type="submit"
+                                                        data-view-component="true"
+                                                        class="js-toggler-target rounded-left-2 btn-sm btn BtnGroup-item">
+                                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                                            version="1.1" width="16" data-view-component="true"
+                                                            class="octicon octicon-star d-none d-md-none mr-2">
+                                                            <path
+                                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                            </path>
+                                                        </svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                                            version="1.1" width="16" data-view-component="true"
+                                                            class="octicon octicon-star mr-0 d-inline-block">
+                                                            <path
+                                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                            </path>
+                                                        </svg>
+                                                        <span data-view-component="true" class="d-none d-md-none">
+                                                            Star
+                                                        </span>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                                <p data-view-component="true" class="text-small color-fg-muted mt-2">
+                                    An archive for all practices, assignments and projects on undergraduate's computer
+                                    science courses at Sogang University
+                                </p>
+                                <div data-view-component="true" class="f6 color-fg-muted d-inline-block mt-1">
+                                    <span class="">
+                                        <span class="repo-language-color" style="background-color: #555555"></span>
+                                        <span itemprop="programmingLanguage">C</span>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div data-view-component="true" class="py-3 border-bottom">
+                                <div data-view-component="true" class="Truncate d-flex flex-justify-between">
+                                    <span style="word-wrap:normal;max-width: 300px;" data-view-component="true"
+                                        class="Truncate-text ws-normal flex-1"> <img
+                                            src="https://avatars.githubusercontent.com/u/28379899?s=40&amp;v=4"
+                                            alt="@mate-academy profile" size="20" height="20" width="20"
+                                            data-view-component="true"
+                                            class="avatar avatar-small circle box-shadow-none mr-1">
+                                        <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;DISCOVER_REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:202883237,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:150633854,&quot;originating_url&quot;:&quot;https://github.com/&quot;}}"
+                                            data-hydro-click-hmac="20b1457b8a8db24cd8ed8fa07d20e3aaa4fad3e8986c9fbdbfa59bda2e4e9b2e"
+                                            href="/mate-academy/jv-robot" data-view-component="true"
+                                            class="Link color-fg-default text-bold">
+                                            mate-academy <span data-view-component="true"
+                                                class="color-fg-muted text-light">/</span> jv-robot
+                                        </a></span>
+                                    <span data-view-component="true" class="Truncate-text flex-shrink-0">
+                                        <template class="js-unstar-confirmation-dialog-template">
+                                            <div class="Box-header">
+                                                <h2 class="Box-title">Unstar this repository?</h2>
+                                            </div>
+                                            <div class="Box-body">
+                                                <p class="mb-3">
+                                                    This will remove {{ repoNameWithOwner }} from the {{ listsWithCount
+                                                    }} that it's been added to.
+                                                </p>
+                                                <div class="form-actions">
+                                                    <!-- '"` --><!-- </textarea></xmp> -->
+                                                    <form class="js-social-confirmation-form" data-turbo="false"
+                                                        action="{{ confirmUrl }}" accept-charset="UTF-8" method="post">
+                                                        <input type="hidden" name="authenticity_token"
+                                                            value="{{ confirmCsrfToken }}">
+                                                        <input type="hidden" name="confirm" value="true">
+                                                        <button data-close-dialog="true" type="submit"
+                                                            data-view-component="true"
+                                                            class="btn-danger btn width-full"> Unstar
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </template>
+
+                                        <div data-view-component="true"
+                                            class="js-toggler-container js-social-container starring-container d-flex">
+                                            <div data-view-component="true" class="starred BtnGroup flex-1 ml-0">
+                                                <!-- '"` --><!-- </textarea></xmp> -->
+                                                <form
+                                                    class="js-social-form BtnGroup-parent flex-auto width-full js-deferred-toggler-target"
+                                                    data-turbo="false" action="/mate-academy/jv-robot/unstar"
+                                                    accept-charset="UTF-8" method="post"><input type="hidden"
+                                                        name="authenticity_token"
+                                                        value="zjjxz5BlIwFWKA-9t47yylralH-_n0uKqCObeLP1jrTeI52wnuyAy4j-fX0GiTb-6w0E8BPlNQ72Uo9W4bAErA"
+                                                        autocomplete="off">
+                                                    <input type="hidden"
+                                                        value="dPCRxJ4T4DYT_vTPmdXZmvLckn6XiFDUI3IIFM1-wnRk6_27kJpD_M0ohg8o0h2uQwsC8TvyLlB9Axw6nztIbA"
+                                                        data-csrf="true" class="js-confirm-csrf-token">
+                                                    <input type="hidden" name="context" value="trending">
+                                                    <button
+                                                        data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;DISCOVER_REPOSITORIES&quot;,&quot;target&quot;:&quot;STAR_REPOSITORIES&quot;,&quot;record_id&quot;:202883237,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:150633854,&quot;originating_url&quot;:&quot;https://github.com/&quot;}}"
+                                                        data-hydro-click-hmac="ab7624aa814a7edf1976aaf77f5389f7d40f96801122b0a327a5eae9afdc7600"
+                                                        data-ga-click="Repository, click unstar button, action:dashboard#index; text:Unstar"
+                                                        aria-label="Unstar this repository" type="submit"
+                                                        data-view-component="true"
+                                                        class="rounded-left-2 btn-sm btn BtnGroup-item"> <svg
+                                                            aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                                            version="1.1" width="16" data-view-component="true"
+                                                            class="octicon octicon-star-fill starred-button-icon d-none d-md-none mr-2">
+                                                            <path
+                                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z">
+                                                            </path>
+                                                        </svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                                            version="1.1" width="16" data-view-component="true"
+                                                            class="octicon octicon-star-fill starred-button-icon mr-0 d-inline-block">
+                                                            <path
+                                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z">
+                                                            </path>
+                                                        </svg>
+                                                        <span data-view-component="true" class="d-none d-md-none">
+                                                            Starred
+                                                        </span>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                            <div data-view-component="true" class="unstarred BtnGroup ml-0 flex-1">
+                                                <!-- '"` --><!-- </textarea></xmp> -->
+                                                <form class="js-social-form BtnGroup-parent flex-auto width-full"
+                                                    data-turbo="false" action="/mate-academy/jv-robot/star"
+                                                    accept-charset="UTF-8" method="post"><input type="hidden"
+                                                        name="authenticity_token"
+                                                        value="NUHMQvUCjP3aIfy3o2HDpW_47QAclVl1Wef7WiPEqcLKjoPcvAj6T2Z4GWLI-0rTxPUnqNZyW91rhhRO2QJGog"
+                                                        autocomplete="off">
+                                                    <input type="hidden" name="context" value="trending">
+                                                    <button
+                                                        data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;DISCOVER_REPOSITORIES&quot;,&quot;target&quot;:&quot;STAR_REPOSITORIES&quot;,&quot;record_id&quot;:202883237,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:150633854,&quot;originating_url&quot;:&quot;https://github.com/&quot;}}"
+                                                        data-hydro-click-hmac="ab7624aa814a7edf1976aaf77f5389f7d40f96801122b0a327a5eae9afdc7600"
+                                                        data-ga-click="Repository, click star button, action:dashboard#index; text:Star"
+                                                        aria-label="Star this repository" type="submit"
+                                                        data-view-component="true"
+                                                        class="js-toggler-target rounded-left-2 btn-sm btn BtnGroup-item">
+                                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                                            version="1.1" width="16" data-view-component="true"
+                                                            class="octicon octicon-star d-none d-md-none mr-2">
+                                                            <path
+                                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                            </path>
+                                                        </svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                                            version="1.1" width="16" data-view-component="true"
+                                                            class="octicon octicon-star mr-0 d-inline-block">
+                                                            <path
+                                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                            </path>
+                                                        </svg>
+                                                        <span data-view-component="true" class="d-none d-md-none">
+                                                            Star
+                                                        </span>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                                <p data-view-component="true" class="text-small color-fg-muted mt-2">
+                                </p>
+                                <div data-view-component="true" class="f6 color-fg-muted d-inline-block mr-4 mt-1">
+                                    <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16" version="1.1"
+                                        width="16" data-view-component="true" class="octicon octicon-star">
+                                        <path
+                                            d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                        </path>
+                                    </svg>
+                                    2
+                                </div>
+                                <div data-view-component="true" class="f6 color-fg-muted d-inline-block mt-1">
+                                    <span class="">
+                                        <span class="repo-language-color" style="background-color: #b07219"></span>
+                                        <span itemprop="programmingLanguage">Java</span>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div data-view-component="true" class="py-3 border-0">
+                                <div data-view-component="true" class="Truncate d-flex flex-justify-between">
+                                    <span style="word-wrap:normal;max-width: 300px;" data-view-component="true"
+                                        class="Truncate-text ws-normal flex-1"> <img
+                                            src="https://avatars.githubusercontent.com/u/92284673?s=40&amp;v=4"
+                                            alt="@Karthi-Govindharaju profile" size="20" height="20" width="20"
+                                            data-view-component="true"
+                                            class="avatar avatar-small circle box-shadow-none mr-1">
+                                        <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;DISCOVER_REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:725882222,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:150633854,&quot;originating_url&quot;:&quot;https://github.com/&quot;}}"
+                                            data-hydro-click-hmac="2c7f90b6af269853d536b9b21cfa61b251d10743a4d8bf3f4089e674bdfe1941"
+                                            href="/Karthi-Govindharaju/ODD2023-WT-Ex-07-CSS" data-view-component="true"
+                                            class="Link color-fg-default text-bold">
+                                            Karthi-Govindharaju <span data-view-component="true"
+                                                class="color-fg-muted text-light">/</span> ODD2023-WT-Ex-07-CSS
+                                        </a></span>
+                                    <span data-view-component="true" class="Truncate-text flex-shrink-0">
+                                        <template class="js-unstar-confirmation-dialog-template">
+                                            <div class="Box-header">
+                                                <h2 class="Box-title">Unstar this repository?</h2>
+                                            </div>
+                                            <div class="Box-body">
+                                                <p class="mb-3">
+                                                    This will remove {{ repoNameWithOwner }} from the {{ listsWithCount
+                                                    }} that it's been added to.
+                                                </p>
+                                                <div class="form-actions">
+                                                    <!-- '"` --><!-- </textarea></xmp> -->
+                                                    <form class="js-social-confirmation-form" data-turbo="false"
+                                                        action="{{ confirmUrl }}" accept-charset="UTF-8" method="post">
+                                                        <input type="hidden" name="authenticity_token"
+                                                            value="{{ confirmCsrfToken }}">
+                                                        <input type="hidden" name="confirm" value="true">
+                                                        <button data-close-dialog="true" type="submit"
+                                                            data-view-component="true"
+                                                            class="btn-danger btn width-full"> Unstar
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </template>
+
+                                        <div data-view-component="true"
+                                            class="js-toggler-container js-social-container starring-container d-flex">
+                                            <div data-view-component="true" class="starred BtnGroup flex-1 ml-0">
+                                                <!-- '"` --><!-- </textarea></xmp> -->
+                                                <form
+                                                    class="js-social-form BtnGroup-parent flex-auto width-full js-deferred-toggler-target"
+                                                    data-turbo="false"
+                                                    action="/Karthi-Govindharaju/ODD2023-WT-Ex-07-CSS/unstar"
+                                                    accept-charset="UTF-8" method="post"><input type="hidden"
+                                                        name="authenticity_token"
+                                                        value="sFdt_-jbTJYuM9l2sqqx_M4mfQwmc3IrlDwjZ2TM_2B7tCJnBhdXZGU1cKt37L4nwTkdwNj0YzGxAUfW_ib0Bw"
+                                                        autocomplete="off">
+                                                    <input type="hidden"
+                                                        value="FUF-7S1Dt_hNRP07fBRiSZDV43Jgpy0q63S2gkAMUI_eojF1w4-sCgZCVOa5Um2Sn8qDvp4gPDDOSdIz2uZb6A"
+                                                        data-csrf="true" class="js-confirm-csrf-token">
+                                                    <input type="hidden" name="context" value="trending">
+                                                    <button
+                                                        data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;DISCOVER_REPOSITORIES&quot;,&quot;target&quot;:&quot;STAR_REPOSITORIES&quot;,&quot;record_id&quot;:725882222,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:150633854,&quot;originating_url&quot;:&quot;https://github.com/&quot;}}"
+                                                        data-hydro-click-hmac="f0bdc800faede10c1ba46cf439ff1358cce30b76b76b0010423890a0095cd422"
+                                                        data-ga-click="Repository, click unstar button, action:dashboard#index; text:Unstar"
+                                                        aria-label="Unstar this repository" type="submit"
+                                                        data-view-component="true"
+                                                        class="rounded-left-2 btn-sm btn BtnGroup-item"> <svg
+                                                            aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                                            version="1.1" width="16" data-view-component="true"
+                                                            class="octicon octicon-star-fill starred-button-icon d-none d-md-none mr-2">
+                                                            <path
+                                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z">
+                                                            </path>
+                                                        </svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                                            version="1.1" width="16" data-view-component="true"
+                                                            class="octicon octicon-star-fill starred-button-icon mr-0 d-inline-block">
+                                                            <path
+                                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z">
+                                                            </path>
+                                                        </svg>
+                                                        <span data-view-component="true" class="d-none d-md-none">
+                                                            Starred
+                                                        </span>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                            <div data-view-component="true" class="unstarred BtnGroup ml-0 flex-1">
+                                                <!-- '"` --><!-- </textarea></xmp> -->
+                                                <form class="js-social-form BtnGroup-parent flex-auto width-full"
+                                                    data-turbo="false"
+                                                    action="/Karthi-Govindharaju/ODD2023-WT-Ex-07-CSS/star"
+                                                    accept-charset="UTF-8" method="post"><input type="hidden"
+                                                        name="authenticity_token"
+                                                        value="5lSwRuQrmEAAy3u8aEz-iPMKwM3MJs-fo-UTjDjQTA5Qp9hFCHRParVWfYqZSJDLIIv0d065A-nSJdRIvjMy2A"
+                                                        autocomplete="off">
+                                                    <input type="hidden" name="context" value="trending">
+                                                    <button
+                                                        data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;DISCOVER_REPOSITORIES&quot;,&quot;target&quot;:&quot;STAR_REPOSITORIES&quot;,&quot;record_id&quot;:725882222,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:150633854,&quot;originating_url&quot;:&quot;https://github.com/&quot;}}"
+                                                        data-hydro-click-hmac="f0bdc800faede10c1ba46cf439ff1358cce30b76b76b0010423890a0095cd422"
+                                                        data-ga-click="Repository, click star button, action:dashboard#index; text:Star"
+                                                        aria-label="Star this repository" type="submit"
+                                                        data-view-component="true"
+                                                        class="js-toggler-target rounded-left-2 btn-sm btn BtnGroup-item">
+                                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                                            version="1.1" width="16" data-view-component="true"
+                                                            class="octicon octicon-star d-none d-md-none mr-2">
+                                                            <path
+                                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                            </path>
+                                                        </svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16"
+                                                            version="1.1" width="16" data-view-component="true"
+                                                            class="octicon octicon-star mr-0 d-inline-block">
+                                                            <path
+                                                                d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                                                            </path>
+                                                        </svg>
+                                                        <span data-view-component="true" class="d-none d-md-none">
+                                                            Star
+                                                        </span>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                                <p data-view-component="true" class="text-small color-fg-muted mt-2">
+                                </p>
+                            </div>
+                            <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;DISCOVER_REPOSITORIES&quot;,&quot;target&quot;:&quot;EXPLORE&quot;,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:150633854,&quot;originating_url&quot;:&quot;https://github.com/&quot;}}"
+                                data-hydro-click-hmac="f9edaa0ed6e49674ac7c3717f6dd64ad20e417f7e9617374151e6367ca5d7f19"
+                                href="/explore" data-view-component="true" class="Link">Explore more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

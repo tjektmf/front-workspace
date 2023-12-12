@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+
+    /* 위아래 텍스트 가운데정렬할때 활용가능한 속성으로 줄 높이를 수정함 근데 텍스트가 두줄이면 못씀 */
+    /* padding을 활용하는 방법도 있음 두 방법을 못쓰는 경우 그냥 클래스 하나 더 파서 따로 주면됨 */
+    line-height: 80px;
+}
+
+.original {
+    border: dashed 1px black;
+
+}
+
+.translate {
+    background-color: red;
+    color: white;
+    transition: all 1s ease-in;
+}
+.translate:hover{
+    transform: translate(400px, 400px); /* x축, y축인데 좌표평면상 (0, 0)이 좌측상단임 */
+}
+
+#example-stand{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px dashed blue;
+}
+
+.scale{
+    background-color: green;
+    color: white;
+    transition: all 1s ease-in;
+}
+.scale:hover{
+    
+    transform: scale(3,0.7); /* x축으로 크기증가, y축으로 크기증가 */
+    border-radius: 20px;
+}
+
+.skew{
+    background-color: blue;
+    color: white;
+    transition: all 1s ease-in;
+}
+.skew:hover{
+    /* 트랜스폼이든 뭐든 걍 이런게 있다 정도만 파악 */
+    /* 직접 뭐 하려하지말고 남들이 해논거 걍 가져다 쓰면 됨 */ 
+    transform: skew(15deg,0); /* x축으로 몇 도 기울일지, y축으로 몇 도 기울일지 */   
+}
+
+.rotate{
+    background-color: purple;
+    color: white;
+    transition: all 20s ease-in;
+}
+.rotate:hover{
+    transform: rotate(360000000deg) scale(10);
+}

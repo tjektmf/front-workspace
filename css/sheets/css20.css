@@ -1,0 +1,19 @@
+#grid-container{
+    display: grid;
+    border: solid 1px red;
+    grid-template-columns: 100px 400px 100px; /* 3 comlumns */
+    grid-template-rows: 80px 300px 80px; /* 3 rows */
+}
+
+#grid-container>div{
+    font-size: 30px;
+    border: 1px dashed blue;
+    /* 자리 알아서 잘 맞춰줌 친-절 */
+    padding: 10px;
+
+}
+
+#div7{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
