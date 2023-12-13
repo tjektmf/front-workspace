@@ -1,0 +1,62 @@
+@media screen {
+    .media {
+        color: red;
+    }
+}
+
+@media print {
+
+    /* 인쇄 화면에서는 파란색으로 보임 */
+    /* 인쇄할때 주민번호 뒷자리 지우는 기능같은거*/
+    .media {
+
+        color: blue;
+    }
+
+}
+
+@media all and (max-width:600px) {
+    .size {
+        border: solid 1px blueviolet;
+        color: aqua;
+    }
+
+
+}
+
+@media all and (min-width:601px) {
+    .size {
+        border: dashed 1px orange;
+        color: green;
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid>div{
+    border: 1px solid black;
+    height: 100px;
+}
+
+/* 그냥 적용하는 설정은 pc 설정 */
+@media screen {
+    
+}
+
+/* 대충 태블릿 크기*/
+@media all and (max-width:800px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* 폰 크기의 화면으로 볼때의 설정*/
+@media all and (max-width:640px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+}

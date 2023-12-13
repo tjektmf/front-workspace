@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_JS 적용방식.html</title>
+</head>
+
+<body>
+
+    <h3># JS 적용 방식 3가지</h3>
+
+    <ul>
+        <li>inline : 앞에 on이 붙은 HTML속성은 자바스크립트 문법을 사용한다</li>
+        <li>internal : script 태그로 페이지 내부에서 사용하는 것</li>
+        <li>external : script 태그로 외부의 .js파일을 불러 사용하는 것</li>
+    </ul>
+    <!-- 앞에 on이 붙은 HTML 속성은 자바스크립트 이벤트 속성임 -->
+    <button 
+        onclick="this.innerHTML='클릭ㄴㄴㄴ에서 바뀜';" 
+        onmouseover="this.innerHTML='마우스올려서 바뀜';">
+        클릭ㄴㄴㄴ
+    </button>
+    <button id="btn2">버튼2</button>
+    <div id="out2">버튼2 활동예정</div>
+
+    <hr>
+
+    <button id="btn3" style="text-align: center;">버튼3</button>
+    <div id="out3">out3</div>
+
+    <!-- 페이지 내부에 JS 직접 작성 -->
+    <script>
+        // id가 out2인 요소를 가져와서 out2에 저장함 get element by ID('ㅇㅇ');
+        out2 = document.getElementById('out2');
+
+
+        // 여기있는 두클릭같은건 메서드라고 생각하면됨
+        function doClick() {
+            out2.innerHTML = '버튼2가 클릭됨';
+        }
+
+        function doMouseOver() {
+            out2.innerHTML = '버튼2에 마우스 올림';
+        }
+        function doMouseLeave2() {
+            out2.innerHTML = '버튼2서 마우스 내림';
+        }
+
+        function dododo() {
+            out2.innerHTML = '뭔가 한듯';
+        }
+
+
+
+        btn2 = document.getElementById('btn2');
+        btn2.onclick = doClick;
+        btn2.onmouseover = doMouseOver;
+        btn2.onmouseleave = doMouseLeave2;
+        btn2.onclick = dododo;
+    </script>
+
+    <!-- 외부 JS 가져다 사용하기-->
+    <script src="./resource/js02.js"></script>
+
+
+</body>
+
+</html>

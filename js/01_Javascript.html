@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_Javascript.html</title>
+</head>
+<body>
+
+    <h3># Javascript</h3>
+
+    <ul>
+        <li>웹 점유율이 100%인 프로그래밍 언어</li>
+        <li>웹 브라우저가 해석하여 실행할 수 있는 프로그래밍 언어</li>
+        <li>최근에는 해당 언어를 해석하는 성능이 좋아져 다른 용도로도 많이 사용된다 (node.js를 통해 서버 구축 등)</li>
+
+    </ul>
+
+    <h3># 웹 페이지가 해석되는 순서</h3>
+    <!-- 순서가 있는 리스트 -->
+    <ol>
+        <li>브라우저가 웹 전체 코드를 통해 HTML 구조를 먼저 계층적으로 정리함 (어떤 요소 내부에 어떤 요소가 있는지 등)</li>
+        <li>화면에 그릴 순서를 결정</li>
+        <li>각 요소의 CSS 스타일을 취합하여 결정한다</li>
+        <li>레이아웃을 설정하고 화면을 그린다</li>
+        <li>4번 과정 도중 자바스크립트를 만나면 해당 과정을 중단하고 자바스크립트를 실행한다</li>
+    </ol>
+
+    <h3># 자바스크립트로 할 수 있는 일</h3>
+
+    <ul>
+        <li>요소의 스타일 변경</li>
+        <li>요소에 이벤트 추가</li>
+        <li>웹 페이지에 요소의 추가 수정 삭제</li>
+    </ul>
+
+    <div id="out">출력 출력 출력</div>
+
+    <script>
+        // Javascript 영역, <!-- 여기선 이거 안 됨 -->
+        /*  여러줄 주석도 있음
+            <style> 태그 내부는 CSS문법이 적용되는 영역인 것처럼 <script> 태그 내부는 JS문법이 적용되는 영역임
+        */
+
+        // document.getElementById : HTML의 ID속성으로 요소 선택
+        const out = document.getElementById('out');
+        // Javascript는 문자열 리터럴에 ''와 ""를 모두 사용할 수 있다
+        // Javascript에는 변수타입이 없다 Constant 그냥 붙여넣으면 이게 변수다 라는 느낌으로 쓰는듯
+
+        // console.log() : Javascript의 콘솔에 출력하기 (로그 남기기)
+        console.log('출력해보기 : ' , out);
+
+        // 선택한 요소 인스턴스를 수정하면 페이지에 반영됨
+        out.innerHTML = '원래 출력 출력 출력이었는데 수정함ㅋㅋ';
+        out.style.color = 'red';
+        out.style.border = 'solid 3px blue';
+        out.style.padding = '10px';
+        out.style.fontSize = '30px';
+    </script>
+    
+</body>
+</html>
