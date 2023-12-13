@@ -18,7 +18,7 @@ gugudan2.style.gap = '3px 3px';
 // <div>는 ''로 감싸서 사용함 2x1=2 이렇게 나오니까 당연히 <div>도 ''로 쓰는게 맞음
 for (let second = 1; second < 10; second++) {
     for (let first = 2; first < 10; first++) {
-   //     gugudan2.innerHTML += '<div>' + first + 'x' + second + '=' + first * second + '</div>';
+        //     gugudan2.innerHTML += '<div>' + first + 'x' + second + '=' + first * second + '</div>';
 
     }
 }
@@ -34,3 +34,35 @@ for (let gop = 1; gop < 10; gop++) {
         gugudan2.innerHTML += gugudan3(dan, gop);
     }
 }
+
+
+
+
+
+const gogodanDiv = document.getElementById('gogodan');
+
+gogodanDiv.style.display = 'grid';
+gogodanDiv.style.gridTemplateColumns = '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr'; // 'repeat(8,1fr)'
+
+// repeat(a, b) = b를 a번 반복함 
+// 여기서 문자열을 사용 할 때에는 무조건 ''사이에 사용함 이클립스에서 사용하는 쿼리문 생각하면 이해하기 쉬울듯
+// ''로 쌓아서 가져간다음 ''벗겨내고 속에있는 값만 사용하는 것처럼
+// 여기도 마찬가지로 예를들어 css파일에서 display: grid; 라고 사용하는걸
+// 여기선 display = 'grid' 여야 ''를 빼고 display: grid 로 적용이 되는거임
+// display = 'grid' 이거랑 display: grid 이 두개가 같은거임 이걸 일단 받아들여야할듯
+
+
+function gogos(first, second) {
+    return `<div>${first}x${second}=${first * second}</div>`;
+}
+
+for (let first = 2; first < 10; first++) {
+    for (let second = 1; second < 10; second++) {
+ //       gogodanDiv.innerHTML += '<div>' + first + 'x' + second + '=' + first * second + '</div>';
+        gogodanDiv.innerHTML += gogos(first, second);
+    }
+}
+
+
+
+
