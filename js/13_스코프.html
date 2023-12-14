@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13_스코프.html</title>
+</head>
+<body>
+    <h3># Java의 스코프와 JS의 스코프의 다른 점</h3>
+
+    <ul>
+        <li>자바는 모든 중괄호를 블록으로 취급</li>
+        <li>자바스크립트는 기본적으로 함수의 중괄호만 블록으로 취급</li>
+    </ul>
+
+    <script>
+        // 함수 내부의 로컬변수는 정상적으로 작동함
+        function f1(){
+            var count = 10;
+        }
+//     console.log(count);  count is not defined
+        // JS에서는 모든 중괄호가 지역을 생성하지는 않음
+        if(true){
+            var abc = 10;
+        }
+        
+        for(var i=0; i<10; i++){
+            console.log(i);
+        }
+        console.log(abc); // 이건 if문 밖이지만 10으로 작동함
+        console.log(i); // 10이 나오면 안되는데 10이 나옴 애초에 낫 디파인드가 나와야함
+
+        // 이 문제들은 var에서 발생하며 let과 const를 사용해서 어느정도 해결함
+        if(true){
+            let num123 = 123;
+        }
+//        console.log(num123); if문 밖이니까 num123 is not defined 
+    </script>
+</body>
+</html>

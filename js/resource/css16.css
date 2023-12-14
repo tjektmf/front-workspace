@@ -1,0 +1,29 @@
+#round>*{
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    padding-top: 35px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#round>:first-child{
+    background-color: aqua;
+}
+
+#round>:nth-child(2){
+    background-color: cornsilk;
+}
+#round>:nth-child(3){
+    background-color: yellowgreen;
+}
+#round>:nth-child(4){
+    background-color: palegreen;
+}
+#round>:nth-child(5){
+    background-color: pink;
+}
+#round>:nth-child(6){
+    background-color: tomato;
+}

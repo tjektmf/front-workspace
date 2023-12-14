@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14_This.html</title>
+</head>
+
+<body>
+
+    <h3>JS의 this</h3>
+
+    <ul>
+        <li>호출하는 방식에 따라 가리키는 대상이 달라진다</li>
+        <li></li>
+    </ul>
+    <p>Press F12 14_This</p>
+
+    <script>
+        function Fruit(name, price) {
+            console.log(this);
+            this.info = function () {
+                console.log(this);
+            };
+        }
+
+        // 1. 함수를 그냥 호출하면 전역 객체를 가리킴
+        Fruit('사과', 1000); // this는 window 
+        // 2. new를 통해 호출하면 새롭게 생성한 인스턴스 영역을 가리킴
+        let f1 = new Fruit('딸기', 2000);
+        // 3. 이미 만들어진 인스턴스를 통해 호출하면 그 인스턴스를 카리킴
+        f1.info();
+
+
+    </script>
+</body>
+
+</html>

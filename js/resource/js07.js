@@ -56,13 +56,22 @@ function gogos(first, second) {
     return `<div>${first}x${second}=${first * second}</div>`;
 }
 
+for (let second = 1; second < 10; second++) {
 for (let first = 2; first < 10; first++) {
-    for (let second = 1; second < 10; second++) {
  //       gogodanDiv.innerHTML += '<div>' + first + 'x' + second + '=' + first * second + '</div>';
         gogodanDiv.innerHTML += gogos(first, second);
     }
 }
 
+let i =0;
+// 0을 false로 받고 0을 제외한 나머지 숫자를 true로 받음
+// infinity = true
+// NaN, null = false
+while(Infinity){
+    console.log(i++);
 
-
-
+    if(i===10){
+        break;
+    }
+}
+console.log('while문 종료');
