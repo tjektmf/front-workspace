@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+[id*="students"] {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+[id*="students"]>div {
+    border: solid black 1px;
+}
+
+/*
+    dd를 포함하는거 [id *= "dd"]
+    dd로 끝나는거   [id $= "dd"]
+*/

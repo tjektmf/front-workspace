@@ -123,3 +123,50 @@ for (let i = 0; i < 6; i++) {
 function ans(index) {
     return richman3[index];
 }
+
+const lottoDiv = document.getElementById('lotto');
+const lottoCnt = [];
+const lottoNums = [];
+
+function LottoNum(num, cnt) {
+    this.num = num;
+    this.cnt = cnt;
+}
+
+for (let i = 0; i < 1000; i++) {
+    lottoNums.push(parseInt(Math.random() * 45 + 1));
+}
+
+for (let i = 0; i < 45; i++) {
+    lottoCnt[i] = new LottoNum(i + 1, 0);
+}
+
+for (let i = 0; i < 1000; i++) {
+    lottoCnt[lottoNums[i] - 1].cnt++;
+}
+
+// 기본적으로 sort는 값이 같을때 0을 리턴, 리턴값이 1일때 순서를 바꾸고 -1일때 순서를 바꾸지 않음
+// 즉 a > b 인데 리턴값을 -1을 주면 바꾸지 않겠다는 뜻이므로 큰 수 부터 내림차순으로 정렬하겠다는 의미 descend
+// a > b 인데 리턴값을 1을 주는 경우는 순서를 바꾸겠다는 뜻이므로 작은 수가 제일 앞에와서 오름차순으로 정렬함 ascend
+// 조건 내용이 참일때 자리를 바꾸겠다 > 1 (positive) 양수를 리턴, 자리를 바꾸지 않겠다 > -1 (negative) 음수를 리턴
+lottoCnt.sort((a, b) => { // lottoCnt를 sort함
+    if (a.cnt > b.cnt) { // a.cnt < b.cnt 일 때 음수를 리턴하면 내림차순임 descend
+        return -1;
+    } else if (a < b) {
+        return 1;
+    } else {
+        return 0;
+    }
+});
+console.log(lottoCnt);
+
+for (let i = 0; i < 6; i++) {
+    lottoDiv.innerHTML += `<div>${lottoCnt.shift().num}</div>`;
+}
+/*
+lottoDiv.innerHTML += `<div>${lottoCnt.shift().num}</div>`;
+lottoDiv.innerHTML += `<div>${lottoCnt.shift().num}</div>`;
+lottoDiv.innerHTML += `<div>${lottoCnt.shift().num}</div>`;
+lottoDiv.innerHTML += `<div>${lottoCnt.shift().num}</div>`;
+lottoDiv.innerHTML += `<div>${lottoCnt.shift().num}</div>`;
+*/

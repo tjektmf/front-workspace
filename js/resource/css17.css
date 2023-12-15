@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+#student>* {
+    border: 1px solid black;
+    font-weight: lighter;
+
+}
+
+#garbage {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+}
+
+#garbage>* {
+    border: 1px red solid;
+}
+
+#eng {
+    display: grid;
+    border: 1px green solid;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+
+
+}

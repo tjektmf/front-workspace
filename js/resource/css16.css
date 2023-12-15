@@ -1,5 +1,8 @@
-#round>*{
+*{
     box-sizing: border-box;
+
+}
+#round>*{
     border: 1px solid black;
     height: 100px;
     width: 100px;
@@ -26,4 +29,15 @@
 }
 #round>:nth-child(6){
     background-color: tomato;
+}
+
+#lotto{
+    display: flex;
+}
+#lotto>div{
+    padding: 35px;
+    font-size: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
 }
