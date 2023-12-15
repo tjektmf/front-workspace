@@ -50,7 +50,7 @@ console.log(fstus);
 
 
 const test = [1,2,3,4,5,6,7,8,9,10];
-const getTest = () => test.reduce((total, index) => total + index, 100);
+const getTest = () => test.reduce((total, index) => total + index, 0);
 console.log('--------------------')
 console.log(getTest());
 console.log('--------------------')
@@ -60,6 +60,16 @@ console.log('--------------------')
 const getTotal = sub => students2.reduce((tot, stu) => tot + stu[sub], 0);
 const getSubjectAvg = sub => getTotal(sub) / students2.length;
 
+/*
+total + stu[sub] 는 매개변수로 특정된 stu[sub]값을 total에 더하는건데 
+아직 total이라는 값이 초기화가 되지 않은 상태라 계산이 제대로 이루어지지 않음
+즉 let total; 이렇게 선언만 되어있는 상태라는 뜻
+그래서 let total = 0; 이렇게 초기화를 해주는 용도로 초기값 0을 추가함
+
+const getTotal2 = sub => students2.reduce((tot, stu) => tot + stu[sub]);
+const getSubjectAvg2 = sub => getTotal2(sub) / students2.length;
+console.log(getSubjectAvg2('kor')); // NaN 뜸
+*/
 console.log(getSubjectAvg('kor'));
 console.log(getSubjectAvg('eng'));
 console.log(getSubjectAvg('math'));
