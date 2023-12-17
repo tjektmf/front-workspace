@@ -158,6 +158,8 @@ lottoCnt.sort((a, b) => { // lottoCnt를 sort함
         return 0;
     }
 });
+
+console.log('----------');
 console.log(lottoCnt);
 
 for (let i = 0; i < 6; i++) {
