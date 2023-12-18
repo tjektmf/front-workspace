@@ -49,7 +49,7 @@ console.log(fstus);
 // "= sub =>" 이 부분은 "= function(sub) =>" 과 정확하게 같음 그냥 대충 생략하는거임
 
 
-const test = [1,2,3,4,5,6,7,8,9,10];
+const test = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const getTest = () => test.reduce((total, index) => total + index, 0);
 console.log('--------------------')
 console.log(getTest());
@@ -82,4 +82,3 @@ const addRow = (table, stu) => {
 
 students2.forEach(stu => addRow(allStudentsTable, stu));
 fstus.forEach(stu => addRow(badStudentsTable, stu));
-

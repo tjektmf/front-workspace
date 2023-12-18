@@ -9,7 +9,7 @@ console.log(numbers);
 
     # 배열.prototype.forEach : 배열의 모든 값을 순서대로 꺼내서 전달한 함수를 실행
     첫 번째 인자로 해당 번째 요소, 두 번째 인자로 인덱스, 세 번째로 원본 배열이 전달되며 (item, index, srcArr)
-    반드시 보든 인자를 다 받을 필요는 없고 필요한 경우에만 사용
+    반드시 모든 인자를 다 받을 필요는 없고 필요한 경우에만 사용
 
 */
 numbers.forEach(function (item, index, srcArr) {    // 함수의 이름은 상관없음 밖에서 이름으로써 사용못함

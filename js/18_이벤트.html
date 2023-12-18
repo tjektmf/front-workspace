@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18_이벤트.html</title>
+    <link rel="stylesheet" href="./resource/css18.css">
+</head>
+
+<body>
+    <h3># 이벤트 다루기</h3>
+
+    <ul>
+        <ul>HTML 속성으로 이벤트 다루기 (onclick, onmouseover, ... )</ul>
+        <ul>JS로 해당 요소에 추가하기</ul>
+    </ul>
+
+
+
+    <!-- 이벤트 이름 앞에 on을 붙이면 html속성이 됨 -->
+    <div id="click1" class="box" onclick="this.style.backgroundColor='orange';">
+        onclick event(HTML)
+    </div>
+
+    <div id="click2" class="box">
+        click event(JS)
+    </div>
+
+    <h3># 이벤트 중첩 (버블링, 캡처링)</h3>
+
+    <ul>
+        <li>계층적으로 만들어져있는 요소에서 이벤트가 발생되는 경우 주변 요소에도 적용됨</li>
+        <li>이벤트가 발생한 요소로부터 부모요소에도 적용되는 것을 버블링이라고 함 (default)</li>
+        <li>자식요소에서 발생한 이벤트가 부모 요소부터 시작하여 자식요소까지 도달하게 하는 것을 캡처링이라고 함</li>
+        <li>addEventListener()의 3번째 매개변수에 true로 설정하는 경우 캡처링이 활성화됨</li>
+        <li>이벤트가 발생하는 경우 가장 부모 요소부터 이벤트가 발생한 요소까지 캡처링을 먼저 진행함</li>
+        <li>그 후 다시 이벤트가 발생한 요소부터 버블링을 진행함</li>
+    </ul>
+
+
+    <div id="outer" class="bubble">
+        Outer Div
+        <div id="inner1" class="bubble">
+            Inner Div1
+            <div id="inner2" class="bubble">
+                Inner Div2
+            </div>
+        </div>
+
+    </div>
+
+    <h3># 요소의 기본 이벤트 제거하기</h3>
+
+    <div>
+        <input type="text" id="user-id">
+        <textarea id="user-intro" cols="30" rows="10"></textarea>
+        <a id="link1" href="http://naver.com">ㄱㄱ</a>
+    </div>
+
+    <h3>효율적인 이벤트 사용 (부모에게 이벤트를 위임)</h3>
+
+    <!-- ul에 이벤트를 줘서 어떤 요소가 클릭되었는지 alert로 알림 -->
+    <ul id="item">
+        <li id="item1">item1</li>
+        <li id="item2">item2</li>
+        <li id="item3">item3</li>
+        <li id="item4">item4</li>
+        <li id="item5">item5</li>
+        <li id="item6">item6</li>
+    </ul>
+
+    <script src="./resource/js18.js"></script>
+</body>
+
+</html>

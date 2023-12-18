@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19_DOM.html</title>
+</head>
+
+<body>
+
+    <h3 id="head1"># Document Object Model</h3>
+
+    <ul>
+        <li>웹 브라우저는 HTML 코드를 해석하여 구조화된 객체 형태로 만들어 놓는다</li>
+        <li>미리 만들어져있는 document라는 객체를 통해 해당 HTML 요소에 접근할 수 있다 </li>
+    </ul>
+    <h3 id="head2"># Document에서 원하는 요소를 선택할 수 있는 메서드</h3>
+
+    <ul>
+        <li class="important">document.getElementById('id')</li>
+        <li name="data">document.getElementsByTagName('tagname')</li>
+        <li name="data" class="important">document.getElementsByClassName('classname')</li>
+        <li class="important">document.getElementasByClassName('id')</li>
+        <li>document.querySelector('cssSelector')</li>
+        <li>document.querySelectorAll('cssSelector')</li>
+
+    </ul>
+
+    <h3># 선택한 HTML 요소의 속성 및 메서드</h3>
+    <ul>
+        <li id="test1"></li>
+        <li>element.innerText : 해당 요소의 내용</li>
+        <li>element.속성이름 : 해당 요소의 해당 속성에 접근</li>
+        <li>element.setAttribute() : 해당 요소의 속성을 메서드로 변경</li>
+        <li>element.addEventListener() : 해당 요소에 이벤트 추가</li>
+        <li>element.style.property : 해당 요소의 스타일에 접근</li>
+        <li>element.className : 해당 요소의 클래스 속성에 접근</li>
+    </ul>
+    <script src="./resource/js19.js"></script>
+</body>
+
+</html>
