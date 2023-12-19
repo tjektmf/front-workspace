@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#main>* {
+    border: 1px gray solid;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    padding: 12px;
+    margin: 10px;
+}

@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+#out {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
+.star {
+    background-color: black;
+    color: yellow;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    text-align: center;
+    position: relative;
+    line-height: 100px;
+}
+
+.starNum{
+    position: absolute;
+    font-size: 20px;
+    right: 10px;
+    top: 10px;
+    line-height: initial;
+}
