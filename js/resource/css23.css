@@ -5,6 +5,7 @@
 #main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    width: 500px;
 }
 
 #main>* {
@@ -25,6 +26,8 @@
     font-size: 20px;
     font-weight: bold;
     grid-template-rows: repeat(5,1fr);
+    width: 500px;
+    margin: 10px;
 }
 
 #clock{
@@ -34,4 +37,5 @@
     margin: 10px;
     height: 50px;
     line-height: 40px;
+    width: 500px;
 }
