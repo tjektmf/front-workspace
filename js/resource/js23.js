@@ -29,10 +29,12 @@ const numberBox2 = [];
 // 게임결과로 저장된 기록들 rankSort에 저장, 코드 순서 때문에 올림
 let rankSort = [];
 let rankS = 1;
+
 while (localStorage.getItem('thx' + rankS) != null) {
-    rankSort[rankS - 1] = localStorage.getItem('thx' + rankS);
+    rankSort[rankS - 1] = parseFloat(localStorage.getItem('thx' + rankS));
     rankS++;
 }
+
 
 // numberBox, numberBox2 순서대로 입력
 for (let i = 1; i < 26; i++) {
@@ -97,7 +99,7 @@ document.body.addEventListener('click', (e) => {
     if (gameNum1 > 50 && gameStart) {
         console.log('game clear');
         clearInterval(interval_timer);
-        localStorage.setItem(storageNumber, timeStart);
+        localStorage.setItem(storageNumber, timeStart.toFixed(1));
         gameStart = false;
     }
 })
@@ -114,6 +116,8 @@ const rank = document.querySelector('#rank');
 rank.innerHTML += `<div> Thanks for playing </div>`;
 
 // 저장된 기록들을 오름차순으로 sort
+
+
 rankSort.sort((a, b) => {
     if (a < b) {
         return -1;
@@ -125,22 +129,40 @@ rankSort.sort((a, b) => {
     }
 });
 
+
 // sort 됐는지 콘솔에서 확인
 console.log(rankSort);
 
 // 1~3등만 화면에 보여줌
+
 for (let i = 1; i < 4; i++) {
     rank.innerHTML += `<div> ${i}등 ${rankSort[i - 1]} </div>`;
 }
 
+
 // 테스트용 입력값
-localStorage.setItem('thx1', 26.7);
-localStorage.setItem('thx2', 42.2);
-localStorage.setItem('thx3', 66.5);
-localStorage.setItem('thx4', 32.9);
-localStorage.setItem('thx5', 52.1);
-localStorage.setItem('thx6', 12.4);
-localStorage.setItem('thx7', 72.6);
-localStorage.setItem('thx8', 48.2);
-localStorage.setItem('thx9', 36.4);
-localStorage.setItem('thx10', 40.1);
+
+localStorage.setItem('thx1', 120.7);
+localStorage.setItem('thx2', 67.2);
+localStorage.setItem('thx3', 82.5);
+localStorage.setItem('thx4', 112.9);
+localStorage.setItem('thx5', 95.1);
+localStorage.setItem('thx6', 75.4);
+localStorage.setItem('thx7', 83.6);
+localStorage.setItem('thx8', 51.2);
+localStorage.setItem('thx9', 42.4);
+localStorage.setItem('thx10', 80.1);
+
+/*
+localStorage.removeItem('thx1');
+localStorage.removeItem('thx2');
+localStorage.removeItem('thx3');
+localStorage.removeItem('thx4');
+localStorage.removeItem('thx5');
+localStorage.removeItem('thx6');
+localStorage.removeItem('thx7');
+localStorage.removeItem('thx8');
+localStorage.removeItem('thx9');
+localStorage.removeItem('thx10');
+*/
+
