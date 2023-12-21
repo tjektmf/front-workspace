@@ -17,7 +17,7 @@
     margin: 10px;
 }
 
-#rank{
+#rank {
     border: 3px gray solid;
     text-align: center;
     height: 200px;
@@ -25,12 +25,12 @@
     padding-top: 20px;
     font-size: 20px;
     font-weight: bold;
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(5, 1fr);
     width: 500px;
     margin: 10px;
 }
 
-#clock{
+#clock {
     border: 3px gray solid;
     text-align: center;
     font-size: 20px;
