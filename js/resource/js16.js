@@ -19,11 +19,11 @@ console.log(fruits.push('mengo')); // 5 망고가 4번 5번에 두번 들어갔�
 console.log(fruits.pop()); // 5번 자리에 있는 맹고를 제거하면서 맹고를 반환함
 console.log(fruits);
 
-// shift() : 맨 앞의 값을 꺼내면서 삭제
+// shift() : 맨 앞의 값을 꺼내면서 삭제, 뒤에있는거 전부 앞으로 당겨와서 자리이동해서 이름이 shift임
 console.log(fruits.shift());
 console.log(fruits);
 
-// unshift() : 맨 앞에 값을 추가
+// unshift() : 맨 앞에 값을 추가, 시프트와 반대로 한칸씩 뒤로 이동해서 언시프트임
 console.log(fruits.unshift('아이언맨'));
 console.log(fruits);
 
@@ -39,6 +39,7 @@ console.log('정렬 후 : ', fruits);
 const numbers = [99, 1, 5, -20, 222, 57, 72, 12];
 //   console.log(numbers.sort());
 
+// sort는 양수를 리턴할때 자리바뀜 
 const myComparator = function (a, b) {
     if (a < b) {
         return 1;
