@@ -28,9 +28,10 @@ div[id^="abs-"] {
 [id^="rel-"] {
     box-sizing: border-box;
     border: solid 3px green;
+    
 }
 
-#rel-ex1 {
+#rel-ex1 link{
     width: 50%;
 }
 

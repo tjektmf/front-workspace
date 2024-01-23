@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./resource/hang.css">
+    <style type="text/css">
+        a:link {
+            color: black;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mainBody">
+
+        <div>
+
+            <div id="hang1" class="hang show"><img src="./resource/1.png" alt=""></div>
+            <div id="hang2" class="hang"><img src="./resource/2.png" alt=""></div>
+            <div id="hang3" class="hang"><img src="./resource/3.png" alt=""></div>
+            <div id="hang4" class="hang"><img src="./resource/4.png" alt=""></div>
+            <div id="hang5" class="hang"><img src="./resource/5.png" alt=""></div>
+            <div id="hang6" class="hang"><img src="./resource/6.png" alt=""></div>
+            <div id="hang7" class="hang"><img src="./resource/7.png" alt=""></div>
+            <div id="hang8" class="hang"><img src="./resource/8.png" alt=""></div>
+
+        </div>
+
+        <div id="body2">
+            <div>
+
+            </div>
+            <div id="grid">
+
+                <div class="grid bar">
+                    <span id="ans1" class="ans">O</span>
+                    <span id="ans2" class="ans">O</span>
+                    <span id="ans3" class="ans">O</span>
+                    <span id="ans4" class="ans">O</span>
+                    <span id="ans5" class="ans">O</span>
+                </div>
+                <div class="grid bar">
+                    <span><textarea id="area1" class="area" cols="1" rows="1" maxlength="1"></textarea></span>
+                    <span><textarea id="area2" class="area" cols="1" rows="1" maxlength="1"></textarea></span>
+                    <span><textarea id="area3" class="area" cols="1" rows="1" maxlength="1"></textarea></span>
+                    <span><textarea id="area4" class="area" cols="1" rows="1" maxlength="1"></textarea></span>
+                    <span><textarea id="area5" class="area" cols="1" rows="1" maxlength="1"></textarea></span>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <button id="die" onclick="showTab()">test</button>
+    <button id="reset" onclick="reset()">reset</button>
+    <script>
+        const hang1 = document.getElementById('hang1');
+        const hang2 = document.getElementById('hang2');
+        const hang3 = document.getElementById('hang3');
+        const hang4 = document.getElementById('hang4');
+        const hang5 = document.getElementById('hang5');
+        const hang6 = document.getElementById('hang6');
+        const hang7 = document.getElementById('hang7');
+        const hang8 = document.getElementById('hang8');
+
+        const area1 = document.getElementById('area1');
+        const ans1 = document.getElementById('ans1');
+
+
+        const dieBtn = document.getElementById('die');
+
+        const tabs = [hang1, hang2, hang3, hang4, hang5, hang6, hang7, hang8];
+
+
+        area1.addEventListener('keydown', (e) => {
+
+            if (e.keyCode == 13) {
+
+
+                if (area1.value === 'a') {
+                    ans1.classList.add('showAns');
+                } else {
+                    showTab();
+                }
+
+            }
+            console.log(e)
+
+
+        })
+
+        function showTab() {
+            for (let i = 0; i < tabs.length - 1; i++) {
+                if (tabs[i].className.includes('show')) {
+                    tabs[i].classList.remove('show');
+                    tabs[i + 1].classList.add('show');
+                    return;
+                }
+            }
+        }
+
+        function reset() {
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('show');
+            }
+            tabs[0].classList.add('show');
+        }
+
+    </script>
+
+    <style>
+        a:visited {
+            color: white;
+        }
+    </style>
+    <a style="background-color: red;" href="http://naver.com">네이버</a>
+    <div id="out">11</div>
+
+
+    <script>
+        const out = document.getElementById('out');
+        const img = document.createElement('img');
+        out.appendChild(img);
+    </script>
+
+    <hr>
+
+    <div class="grid ">
+
+        <div>
+
+        </div>
+        <div class="grid ">
+            <div></div>
+            <div>Sonus - Basic</div>
+            <div></div>
+        </div>
+        <div class="grid ">
+            <div>STUDY</div>
+            <div>QUIZ</div>
+        </div>
+        <div class="grid ">
+            <div>C1</div>
+            <div>C2</div>
+            <div>C3</div>
+            <div>C4</div>
+            <div>C5</div>
+            <div>C6</div>
+            <div>C7</div>
+            <div>C8</div>
+            <div>I1</div>
+            <div>I2</div>
+            <div>I3</div>
+            <div>I4</div>
+            <div>I5</div>
+            <div>I6</div>
+            <div>I7</div>
+            <div>I8</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
