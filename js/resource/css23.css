@@ -39,3 +39,14 @@
     line-height: 40px;
     width: 500px;
 }
+
+.mainBody{
+ display: flex;
+}
+.mainBody>:first-child>:first-child{
+   padding-left: 40px;
+   padding-top: 30px;
+}
+.mainBody>:first-child>:first-child>div{
+    border-radius: 10px;
+}

@@ -116,8 +116,6 @@ const rank = document.querySelector('#rank');
 rank.innerHTML += `<div> Thanks for playing </div>`;
 
 // 저장된 기록들을 오름차순으로 sort
-
-
 rankSort.sort((a, b) => {
     if (a < b) {
         return -1;
@@ -129,12 +127,10 @@ rankSort.sort((a, b) => {
     }
 });
 
-
 // sort 됐는지 콘솔에서 확인
 console.log(rankSort);
 
 // 1~3등만 화면에 보여줌
-
 for (let i = 1; i < 4; i++) {
     rank.innerHTML += `<div> ${i}등 ${rankSort[i - 1]} </div>`;
 }

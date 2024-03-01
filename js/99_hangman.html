@@ -68,6 +68,8 @@
     <button id="die" onclick="showTab()">test</button>
     <button id="reset" onclick="reset()">reset</button>
     <script>
+
+
         const hang1 = document.getElementById('hang1');
         const hang2 = document.getElementById('hang2');
         const hang3 = document.getElementById('hang3');
@@ -84,23 +86,18 @@
         const dieBtn = document.getElementById('die');
 
         const tabs = [hang1, hang2, hang3, hang4, hang5, hang6, hang7, hang8];
-
-
+        const ansTabs = ['apple', 'train', 'hello'];
+        const selectedAns = ansTabs[parseInt(Math.random() * 3)]
+       
         area1.addEventListener('keydown', (e) => {
-
             if (e.keyCode == 13) {
-
-
-                if (area1.value === 'a') {
+                if (area1.value === selectedAns.charAt(0)) {
                     ans1.classList.add('showAns');
                 } else {
                     showTab();
                 }
-
             }
             console.log(e)
-
-
         })
 
         function showTab() {
@@ -139,40 +136,6 @@
 
     <hr>
 
-    <div class="grid ">
-
-        <div>
-
-        </div>
-        <div class="grid ">
-            <div></div>
-            <div>Sonus - Basic</div>
-            <div></div>
-        </div>
-        <div class="grid ">
-            <div>STUDY</div>
-            <div>QUIZ</div>
-        </div>
-        <div class="grid ">
-            <div>C1</div>
-            <div>C2</div>
-            <div>C3</div>
-            <div>C4</div>
-            <div>C5</div>
-            <div>C6</div>
-            <div>C7</div>
-            <div>C8</div>
-            <div>I1</div>
-            <div>I2</div>
-            <div>I3</div>
-            <div>I4</div>
-            <div>I5</div>
-            <div>I6</div>
-            <div>I7</div>
-            <div>I8</div>
-        </div>
-
-    </div>
 
 </body>
 
